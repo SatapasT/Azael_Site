@@ -1,16 +1,23 @@
 import { useState } from 'react';
-import AzaelHeadshot from './assets/images/Azael_Headshot.png';
+import Homebutton from './constants/hotbar_button/homeButton';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className={'flex items-start bg-red-950'}>
-      <div className={'flex items-start bg-red-900 h-screen w-28 p-4 border-r-4 border-yellow-600'}>
-        <div className={'flex items-start bg-red-900 border-2 border-slate-600'}>
-          <img src={AzaelHeadshot} alt="Azael Icon Headshot" />
-        </div>     
-      </div>      
+    <div className="md:container md:mx-auto bg-red-950 ">
+      <div className="flex h-screen ">
+        <div className="bg-red-900 w-32 p-4 border-r-8 border-yellow-600 ">
+          <div className="self-end">
+            <Homebutton />
+          </div>
+        </div>
+        <div className="flex h-screen w-screen bg-blue-500">
+          <div className="flex-1 text-center self-center ">
+            hello
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
