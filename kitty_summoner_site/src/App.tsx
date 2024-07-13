@@ -1,20 +1,35 @@
 import { useState } from 'react';
-import Homebutton from './constants/hotbar_button/homeButton';
+import HomeButton from './constants/hotbar_button/homeButton';
+import HomePage from './components/home/home_page';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [page] = useState<string>('home');
 
+function choosePage () {
+  if (page === 'home') {
+    return <HomePage />;
+  }
+  else {
+    return <HomePage />;
+  }
+    
+}
   return (
     <div className="md:container md:mx-auto bg-red-950 ">
       <div className="flex h-screen ">
-        <div className="bg-red-900 w-32 p-4 border-r-8 border-yellow-600 ">
-          <div className="self-end">
-            <Homebutton />
+        <div className="flex flex-col items-start bg-red-900 w-36 p-4 border-r-8 border-yellow-600 ">
+          <div className="mb-auto items-start ">
+            <HomeButton />
+          </div>
+          <div className="mb-auto items-end ">
+            <HomeButton />
+            <HomeButton />
+            <HomeButton />
           </div>
         </div>
-        <div className="flex h-screen w-screen bg-blue-500">
+        <div className="flex flex-grow flex-col h-screen w-screen bg-blue-500">
           <div className="flex-1 text-center self-center ">
-            hello
+            {choosePage()}
           </div>
         </div>
       </div>
