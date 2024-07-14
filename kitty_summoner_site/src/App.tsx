@@ -27,7 +27,7 @@ function choosePage () {
             <HomeButton />
           </div>
         </div>
-        <div className="flex flex-grow flex-col h-screen w-screen bg-blue-500">
+        <div className="flex flex-grow flex-col h-screen w-screen bg-slate-900">
           <div className="flex-1 text-center self-center ">
             {choosePage()}
           </div>
