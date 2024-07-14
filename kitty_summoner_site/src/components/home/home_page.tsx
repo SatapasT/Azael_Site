@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.css'
 import xIcon from './photo/x_icon.png';
+import tiktokIcon from './photo/tiktok_icon.png';
+import instagarmIcon from './photo/instagram_icon.png';
 
 const HomePage = () => {
     return (
@@ -14,9 +16,15 @@ const HomePage = () => {
             <div className='w-full py-10 flex justify-center'>
                 <hr className='w-3/4 border-t-2 border-gradient-to-r from-red-400 via-orange-400 to-pink-400' />
             </div>
-            <div className='relative top-0 justify-center flex bg-gradient-to-r items-center from-red-400 via-orange-400 to-pink-400 bg-clip-text text-1xl font-extrabold text-transparent text-center select-auto'> 
-                <img src={xIcon} alt="X Social Media" className="enlarge w-12" />
+            <div className='container mx-auto'>
+                <div className='relative top-0 flex-row justify-center flex bg-gradient-to-r items-center'> 
+                    <img src={xIcon} alt="X Social Media" className="enlarge uniform-size" />
+                    <img src={tiktokIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                    <img src={instagarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                </div>
+
             </div>
+            
         </div>
     );
 };

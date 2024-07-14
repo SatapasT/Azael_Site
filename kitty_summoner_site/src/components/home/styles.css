@@ -16,3 +16,9 @@ div {
     animation: marquee 10s linear infinite;
     white-space: nowrap;
 }
+
+.uniform-size {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
