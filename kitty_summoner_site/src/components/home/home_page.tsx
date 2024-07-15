@@ -3,6 +3,7 @@ import './styles.css'
 import xIcon from './photo/x_icon.png';
 import tiktokIcon from './photo/tiktok_icon.png';
 import instagarmIcon from './photo/instagram_icon.png';
+import telegarmIcon from './photo/telegarm_icon.png'
 
 const HomePage = () => {
     return (
@@ -17,14 +18,24 @@ const HomePage = () => {
                 <hr className='w-3/4 border-t-2 border-gradient-to-r from-red-400 via-orange-400 to-pink-400' />
             </div>
             <div className='container mx-auto'>
-                <div className='relative top-0 flex-row justify-center flex bg-gradient-to-r items-center'> 
-                    <img src={xIcon} alt="X Social Media" className="enlarge uniform-size" />
-                    <img src={tiktokIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
-                    <img src={instagarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                <div className='relative top-0 flex-row justify-center flex bg-gradient-to-r items-center space-x-4'> 
+                    <a href="https://x.com/Azael_Goat" target="_blank" rel="noopener noreferrer">
+                        <img src={xIcon} alt="X Social Media" className="enlarge uniform-size" />
+                    </a>
+                    <a href="https://www.tiktok.com/@azael_goat" target="_blank" rel="noopener noreferrer">
+                        <img src={tiktokIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                    </a>
+                    <a href="https://www.instagram.com/azael_goat/" target="_blank" rel="noopener noreferrer">
+                        <img src={instagarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                    </a>
+                    <a href="https://www.instagram.com/azael_goat/" target="_blank" rel="noopener noreferrer">
+                        <img src={telegarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                    </a>
                 </div>
-
             </div>
-            
+            <div className='w-full py-10 flex justify-center'>
+                hello
+            </div>
         </div>
     );
 };
