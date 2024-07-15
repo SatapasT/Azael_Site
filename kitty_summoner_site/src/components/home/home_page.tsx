@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles.css'
 import xIcon from './photo/x_icon.png';
 import tiktokIcon from './photo/tiktok_icon.png';
@@ -8,7 +7,7 @@ import telegarmIcon from './photo/telegarm_icon.png'
 const HomePage = () => {
     return (
         <div className='justify marker:items-center w-fit h-auto flex flex-col'> 
-            <div className='relative top-0 py-2 justify-center flex bg-gradient-to-r items-center from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-8xl font-extrabold text-transparent text-center select-auto enlarge animate-glow'> 
+            <div className='relative top-0 py-2 justify-center flex bg-gradient-to-r items-center from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-8xl font-extrabold text-transparent text-center select-auto animate-glow'> 
                 Azael
             </div>
             <div className='relative top-0 justify-center flex bg-gradient-to-r items-center from-red-400 via-orange-400 to-pink-400 bg-clip-text text-1xl font-extrabold text-transparent text-center select-auto'> 
