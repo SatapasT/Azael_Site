@@ -17,6 +17,7 @@ export const Items = [
 {
     id: "tag",
     title: "Gaming Tags",
-    url: "#tags",
+    url: "#tag",
+    onlyMobile: false
 }
 ];

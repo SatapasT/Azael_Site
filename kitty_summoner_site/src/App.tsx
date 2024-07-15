@@ -3,7 +3,7 @@ import HomePage from './components/home/home_page';
 import NavBar from './components/navbar/navbar';
 
 function App() {
-  const [page] = useState<string>('home');
+  const [page] = useState<string>('home')[0];
 
   function choosePage() {
     if (page === 'home') {
