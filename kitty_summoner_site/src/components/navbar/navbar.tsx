@@ -6,24 +6,24 @@ import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
 import instagarmIcon from '../../assets/images/instagram_icon.png';
-import telegarmIcon from '../../assets/images/telegarm_icon.png'
-import './styles.css'
+import telegarmIcon from '../../assets/images/telegarm_icon.png';
+import './styles.css';
 import HamburgerMenu from './hambuger_menu';
 
 const NavBar = () => {
     const location = useLocation();
-    const [openNavigation, setopenNavigation] = useState(true);
+    const [openNavigation, setOpenNavigation] = useState(false);
 
     return (
-        <div className={`fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8 lg:bg-orange-600 lg:backdrop-blur-sm ${openNavigation ? 'bg-orange-600' : 'bg-orange-600 backdrop-blur-sm'}`}>
-            <div className='flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
+        <div className="fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8 lg:bg-orange-600 lg:backdrop-blur-sm">
+            <div className='flex items-center px-5 lg:px-7.5 xl:px-10 h-16'>
                 <a className='block w-[12rem] xl:mr-8' href='#home'>
                     <img
                         src={AzaelHeadshotImage}
                         width={70}
                         height={70}
                         alt='Home Page Icon'
-                        className='enlarge'
+                        className='enlarge p-2 box-border'
                     />
                 </a>
                 <nav className='hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-red-900 lg:static lg:flex lg:mx-auto lg:bg-transparent'>
@@ -46,19 +46,28 @@ const NavBar = () => {
                         <img src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.tiktok.com/@azael_goat' target='_blank' rel='noopener noreferrer'>
-                        <img src={tiktokIcon} alt='TikTok SocialMedia' className='enlarge nav-icon' />
+                        <img src={tiktokIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
-                        <img src={instagarmIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
+                        <img src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
                     </a>
-                    <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
-                        <img src={telegarmIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
+                    <a href='https://t.me/KittySummoner' target='_blank' rel='noopener noreferrer'>
+                        <img src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
-                <div className={` ${openNavigation ? 'flex right-0' : 'hidden'}`}>
-                    <HamburgerMenu />
+                <div className={`lg:hidden ml-auto`}>
+                    <button title='Open Menu' onClick={() => setOpenNavigation(!openNavigation)} className="relative group">
+                        <div className="relative z-20 flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 focus:ring-2 ring-opacity-30 duration-200 shadow-md">
+                            <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${openNavigation ? 'rotate-0' : ''}`}>
+                                <div className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${openNavigation ? 'rotate-45 ' : ''}`}></div>
+                                <div className={`bg-white h-[2px] w-7 rounded transform transition-all duration-300 ${openNavigation ? 'opacity-0' : 'opacity-100'}`}></div>
+                                <div className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${openNavigation ? '-rotate-45' : ''}`}></div>
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </div>
+            <HamburgerMenu isOpen={openNavigation} toggleMenu={() => setOpenNavigation(!openNavigation)} />
         </div>
     );
 };

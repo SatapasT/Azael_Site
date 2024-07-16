@@ -27,7 +27,7 @@ const HomePage = () => {
                     <a href="https://www.instagram.com/azael_goat/" target="_blank" rel="noopener noreferrer">
                         <img src={instagarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
                     </a>
-                    <a href="https://www.instagram.com/azael_goat/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/KittySummoner" target="_blank" rel="noopener noreferrer">
                         <img src={telegarmIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
                     </a>
                 </div>
