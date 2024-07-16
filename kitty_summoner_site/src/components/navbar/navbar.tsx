@@ -1,14 +1,15 @@
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
-import AzaelHeadshotImage from './azael_headshot.png';
+import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
 import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
 import instagarmIcon from '../../assets/images/instagram_icon.png';
 import telegarmIcon from '../../assets/images/telegarm_icon.png';
-import './styles.css';
+import '../../assets/styles.css';
 import HamburgerMenu from './hambuger_menu';
+
 
 const NavBar = () => {
     const location = useLocation();

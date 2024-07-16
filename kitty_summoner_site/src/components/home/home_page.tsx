@@ -1,8 +1,8 @@
-import './styles.css'
-import xIcon from './photo/x_icon.png';
-import tiktokIcon from './photo/tiktok_icon.png';
-import instagarmIcon from './photo/instagram_icon.png';
-import telegarmIcon from './photo/telegarm_icon.png'
+import '../../assets/styles.css';
+import xIcon from '../../assets/images/x_icon.png';
+import tiktokIcon from '../../assets/images/tiktok_icon.png';
+import instagarmIcon from '../../assets/images/instagram_icon.png';
+import telegarmIcon from '../../assets/images/telegarm_icon.png';
 
 const HomePage = () => {
     return (
