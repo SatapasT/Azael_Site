@@ -16,7 +16,6 @@ const NavBar = () => {
 
     return (
         <div className={`fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8 lg:bg-orange-600 lg:backdrop-blur-sm ${openNavigation ? 'bg-orange-600' : 'bg-orange-600 backdrop-blur-sm'}`}>
-            <HamburgerMenu />
             <div className='flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
                 <a className='block w-[12rem] xl:mr-8' href='#home'>
                     <img
@@ -57,9 +56,8 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div className={` ${openNavigation ? 'flex right-0' : 'hidden'}`}>
-                    
+                    <HamburgerMenu />
                 </div>
-                
             </div>
         </div>
     );
