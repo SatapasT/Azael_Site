@@ -4,7 +4,7 @@ import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
 import instagarmIcon from '../../assets/images/instagram_icon.png';
 import telegarmIcon from '../../assets/images/telegarm_icon.png';
-import AzaelHeadshotImage from './azael_headshot.png';
+import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
 
 const HamburgerMenu: React.FC<{ isOpen: boolean; toggleMenu: () => void }> = ({ isOpen, toggleMenu }) => {
     return (
