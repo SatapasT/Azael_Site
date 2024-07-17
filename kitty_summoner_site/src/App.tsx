@@ -16,17 +16,12 @@ useEffect(() => {
     setCurrentPage(window.location.hash.substring(1) || 'home');
   };
 
-  // Set up the event listener for hash changes
   window.addEventListener('hashchange', changePage);
-
-  // Initial call to set the current page based on the initial hash
   changePage();
-
-  // Cleanup the event listener on component unmount
   return () => {
     window.removeEventListener('hashchange', changePage);
   };
-}, []); // Empty dependency array to run only once on mount
+}, []);
 
 
   const renderPage = () => {
