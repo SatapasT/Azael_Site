@@ -1,4 +1,3 @@
-import React from 'react';
 import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
@@ -6,12 +5,15 @@ import instagarmIcon from '../../assets/images/instagram_icon.png';
 import telegarmIcon from '../../assets/images/telegarm_icon.png';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
 
-const HamburgerMenu: React.FC<{ isOpen: boolean; toggleMenu: () => void }> = ({ isOpen, toggleMenu }) => {
+type HamburgerMenuProps = {
+    isOpen: boolean;
+    toggleMenu: () => void;
+};
 
-    
+const HamburgerMenu = ({ isOpen, toggleMenu }: HamburgerMenuProps) => {
     return (
         <div className={`fixed top-0 left-0 w-full h-full z-10 transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-            <div className='absolute inset-0 bg-slate-700 opacity-95 m-0 p-0 flex flex-col h-screen border-4 items-center justify-center overflow-y-auto' onClick={toggleMenu}>
+            <div className='absolute inset-0 bg-slate-900 opacity-95 m-0 p-0 flex flex-col h-screen border-4 items-center justify-center overflow-y-auto' onClick={toggleMenu}>
                 <div className='flex justify-center w-full py-4'>
                     <a className='block' href='#home'>
                         <img

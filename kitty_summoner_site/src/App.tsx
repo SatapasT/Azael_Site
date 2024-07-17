@@ -47,9 +47,9 @@ useEffect(() => {
   };
 
   return (
-    <div className="container mx-auto bg-red-950">
+    <div className="container mx-auto">
       <NavBar />
-        <div className="flex-grow flex flex-col h-screen bg-slate-900">
+        <div className="flex-grow flex flex-col h-screen">
           <div className="flex-1 flex justify-center items-center">
             {renderPage()}
           </div>

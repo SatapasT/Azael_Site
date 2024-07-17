@@ -10,10 +10,13 @@ import telegarmIcon from '../../assets/images/telegarm_icon.png';
 import '../../assets/styles.css';
 import HamburgerMenu from './hambuger_menu';
 
-
 const NavBar = () => {
     const location = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
+
+    const toggleMenu = () => {
+        setOpenNavigation(!openNavigation);
+    }
 
     return (
         <div className="fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8 lg:bg-orange-600 lg:backdrop-blur-sm">
@@ -57,7 +60,7 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div className={`lg:hidden ml-auto`}>
-                    <button title='Open Menu' onClick={() => setOpenNavigation(!openNavigation)} className="relative group">
+                    <button title='Open Menu' onClick={toggleMenu} className="relative group">
                         <div className="relative z-20 flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 focus:ring-2 ring-opacity-30 duration-200 shadow-md">
                             <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${openNavigation ? 'rotate-0' : ''}`}>
                                 <div className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${openNavigation ? 'rotate-45 ' : ''}`}></div>
@@ -68,7 +71,7 @@ const NavBar = () => {
                     </button>
                 </div>
             </div>
-            <HamburgerMenu isOpen={openNavigation} toggleMenu={() => setOpenNavigation(!openNavigation)} />
+                <HamburgerMenu isOpen={openNavigation} toggleMenu={toggleMenu} />
         </div>
     );
 };
