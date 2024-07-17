@@ -1,4 +1,6 @@
+import React from 'react';
 import { useState,useEffect } from 'react';
+
 import HomePage from './components/home/home_page';
 import ArtPage from './components/art/art_page';
 import PhotoPage from './components/photo/photo_page';
