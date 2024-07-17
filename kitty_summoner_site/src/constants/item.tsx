@@ -1,8 +1,8 @@
 export const Items = [
 {
-        id: "photo",
-        title: "Photos",
-        url: "#photo",
+    id: "photo",
+    title: "Photos",
+    url: "#photo",
 },
 {
     id: "art",
@@ -10,9 +10,9 @@ export const Items = [
     url: "#art",
 },
 {
-    id: "social",
-    title: "Social",
-    url: "#social",
+    id: "fursona",
+    title: "Fursona",
+    url: "#fursona",
 },
 {
     id: "tag",
