@@ -1,3 +1,4 @@
+import React from 'react';
 import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
