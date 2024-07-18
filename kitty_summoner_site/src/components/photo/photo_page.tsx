@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HomePageItem } from "../../constants/home_page_item";
-import EnlargeImageModal from "./enlarge_image_modal";
+import EnlargeImageModal from "../modal/enlarge_image_modal";
 
 const PhotoPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -43,7 +43,7 @@ const PhotoPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPageLoading(false);
-    }, 300);
+    }, 200);
     return () => clearTimeout(timer);
   }, [currentPage]);
 
@@ -109,12 +109,14 @@ const PhotoPage = () => {
                   </div>
                 </div>
               ) : (
-                <img
+                <a href='javascript:void(0)'>
+                  <img
                   alt="gallery"
                   className="w-full h-full object-contain rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:z-10 border-1 border-slate-700"
                   src={`https://drive.google.com/thumbnail?id=${item.photoID}&sz=w1000`}
                   onClick={() => selectEnlargeImage(item.photoID)}
                 />
+                </a>
               )}
             </div>
           ))}
