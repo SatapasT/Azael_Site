@@ -136,6 +136,7 @@ const PhotoPage = () => {
     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-l 
       ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r ' : ''}`}
     onClick={previousPage}
+    disabled={currentPage === 1 ? true : false}
   >
     Prev
   </button>
@@ -157,6 +158,7 @@ const PhotoPage = () => {
     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
       ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
     onClick={nextPage}
+    disabled={currentPage === totalPage ? true : false}
   >
     Next
   </button>
