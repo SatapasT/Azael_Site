@@ -1,17 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
-
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
 import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.png';
 import tiktokIcon from '../../assets/images/tiktok_icon.png';
 import instagarmIcon from '../../assets/images/instagram_icon.png';
 import telegarmIcon from '../../assets/images/telegarm_icon.png';
-import '../../assets/styles.css';
 import HamburgerMenu from './hambuger_menu';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
     const location = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
 
@@ -20,7 +17,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className="fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8 lg:bg-orange-600 lg:backdrop-blur-sm">
+        <div className="fixed top-0 left-0 w-full z-50 bg-orange-600 backdrop-blur-sm border-t border-red-600 border-8">
             <div className='flex items-center px-5 lg:px-7.5 xl:px-10 h-16'>
                 <a className='block w-[12rem] xl:mr-8' href='#home'>
                     <img
@@ -72,7 +69,7 @@ const NavBar = () => {
                     </button>
                 </div>
             </div>
-                <HamburgerMenu isOpen={openNavigation} toggleMenu={toggleMenu} />
+            <HamburgerMenu isOpen={openNavigation} toggleMenu={toggleMenu} />
         </div>
     );
 };
