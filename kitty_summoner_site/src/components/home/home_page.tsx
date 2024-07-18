@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
                 </div>        
             </a>
             <div className='text-red-600 font-extrabold'>
-                PAGE IS STILL UNDER WORK, MANY OF THE STUFF NOT ADDED YET
+                SOME PAGE IS STILL UNDER WORK, MANY OF THE STUFF NOT ADDED YET
             </div>
         </div>
     );
