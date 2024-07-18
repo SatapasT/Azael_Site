@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
+    "blurhash": "^2.0.5",
     "react": "^18.2.0",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.1"
   },
@@ -24,7 +26,7 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
-    "eslint": "^9.7.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.34.4",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
