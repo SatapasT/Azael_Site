@@ -47,7 +47,7 @@ const PhotoPage = () => {
     return () => clearTimeout(timer);
   }, [currentPage]);
 
-  const selectEnlargeImage = (key)  => {
+  const selectEnlargeImage = (key : string)  => {
     setEnlargeImageVisible(true)
     setSelectedEnlargedImage(`https://drive.google.com/thumbnail?id=${key}&sz=w1000`)
   }
