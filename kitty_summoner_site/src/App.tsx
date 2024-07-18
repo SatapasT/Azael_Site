@@ -41,7 +41,7 @@ const App: React.FC = () => {
     return (
         <div className="container mx-auto flex flex-col h-screen">
             <NavBar />
-            <div className="flex-grow mt-16 overflow-y-auto">
+            <div className="flex-grow mt-16 overflow-auto">
                 {renderPage()}
             </div>
         </div>
