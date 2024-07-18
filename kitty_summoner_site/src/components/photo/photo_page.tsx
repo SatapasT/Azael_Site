@@ -6,7 +6,8 @@ const PhotoPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPages, setItemPerPage] = useState(9);
   const [PageLoading, setPageLoading] = useState(true);
-  const [enlargeImageVisible,setEnlargeImageVisible] = useState(true);
+  const [enlargeImageVisible,setEnlargeImageVisible] = useState(false);
+  const [selectedEnlargedImage, setSelectedEnlargedImage] = useState('');
 
   const totalPage = Math.ceil(HomePageItem.length / itemsPerPages);
 
@@ -45,6 +46,11 @@ const PhotoPage = () => {
     }, 300);
     return () => clearTimeout(timer);
   }, [currentPage]);
+
+  const selectEnlargeImage = (key)  => {
+    setEnlargeImageVisible(true)
+    setSelectedEnlargedImage(`https://drive.google.com/thumbnail?id=${key}&sz=w1000`)
+  }
 
   const closeEnlargeImage = () => {
     setEnlargeImageVisible(!enlargeImageVisible)
@@ -107,6 +113,7 @@ const PhotoPage = () => {
                   alt="gallery"
                   className="w-full h-full object-contain rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:z-10 border-1 border-slate-700"
                   src={`https://drive.google.com/thumbnail?id=${item.photoID}&sz=w1000`}
+                  onClick={() => selectEnlargeImage(item.photoID)}
                 />
               )}
             </div>
@@ -146,10 +153,8 @@ const PhotoPage = () => {
           </button>
         </div>
       </div>
-      <EnlargeImageModal image='' isVisible={enlargeImageVisible} onClose={closeEnlargeImage}/>
+      <EnlargeImageModal image={selectedEnlargedImage} isVisible={enlargeImageVisible} onClose={closeEnlargeImage}/>
     </div>
   );
 };
 export default PhotoPage;
-
-
