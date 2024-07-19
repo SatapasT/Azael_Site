@@ -39,7 +39,7 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen">
             <NavBar />
             <div className="flex-grow mt-16 overflow-auto">
                 {renderPage()}

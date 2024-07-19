@@ -96,7 +96,7 @@ const FursonaPage = () => {
             <div className="py-10 flex justify-center font-extrabold">
               <button type="button" className="flex items-center text-white bg-gradient-to-br from-red-500 to-orange-500 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                 <img src={munchingGrassIcon} alt="Munching Grass Sticker" className="w-6 h-6 mr-2" />
-                <span>Get Azael Telegram Sticker!</span>
+                <span>Get Azael Telegram Stickers!</span>
               </button>
             </div>
           </a>
