@@ -94,7 +94,7 @@ const GamingTagPage: React.FC = () => {
               @Kitty Summoner#Pheonix
             </div>
           </div>
-          <a href='https://eu.finalfantasyxiv.com/lodestone/my/' target="_blank" rel="noopener noreferrer">
+          <a href='https://eu.finalfantasyxiv.com/lodestone/character/36651684/' target="_blank" rel="noopener noreferrer">
             <img
               src={FinalFantasyIcon}
               title="Final Fantasy XIV"

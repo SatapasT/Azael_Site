@@ -3,7 +3,8 @@ import { ArtPageItem } from "../../constants/art_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 
 const LoadingSpinner = () => (
-  <div className="flex items-center justify-center w-full h-full">
+  
+  <div className="flex items-center justify-center h-1/5">
     <svg
       role="status"
       className="w-full h-full text-gray-200 animate-spin fill-blue-600"
@@ -121,7 +122,7 @@ const ArtPage: React.FC = () => {
           {currentItems.map((item) => (
             <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center">
               {PageLoading && !loadedItems.has(item.key) ? (
-                <div className="w-fill h-fill flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
+                <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
                   <LoadingSpinner />
                 </div>
               ) : (
@@ -154,6 +155,7 @@ const ArtPage: React.FC = () => {
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
       ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
               onClick={firstPage}
+              disabled={currentPage === 1 ? true : false}
             >
               First
             </button>
@@ -190,6 +192,7 @@ const ArtPage: React.FC = () => {
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
       ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
               onClick={lastPage}
+              disabled={currentPage === totalPage ? true : false}
             >
               Last
             </button>

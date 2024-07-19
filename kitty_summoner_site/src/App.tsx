@@ -7,7 +7,7 @@ import GamingTagPage from './components/gaming_tag/gaming_tag_page';
 import NavBar from './components/navbar/navbar';
 import { Helmet } from "react-helmet";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import './App.css'; // Ensure this file is correctly included
+import './App.css';
 
 const App: React.FC = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -23,6 +23,10 @@ const App: React.FC = () => {
             window.removeEventListener('hashchange', changePage);
         };
     }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentPage]);
 
     const renderPage = () => {
         switch (currentPage) {
