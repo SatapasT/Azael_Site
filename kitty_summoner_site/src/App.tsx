@@ -5,7 +5,9 @@ import PhotoPage from './components/photo/photo_page';
 import FursonaPage from './components/fursona/fursona_page';
 import GamingTagPage from './components/gaming_tag/gaming_tag_page';
 import NavBar from './components/navbar/navbar';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import './App.css'; // Ensure this file is correctly included
 
 const App: React.FC = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -55,7 +57,15 @@ const App: React.FC = () => {
             </Helmet>
             <NavBar />
             <div className="flex-grow mt-16 overflow-auto">
-                {renderPage()}
+                <TransitionGroup>
+                    <CSSTransition
+                        key={currentPage}
+                        timeout={300}
+                        classNames="fade"
+                    >
+                        <div className="page">{renderPage()}</div>
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
         </div>
     );

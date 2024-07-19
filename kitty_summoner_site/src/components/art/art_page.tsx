@@ -6,6 +6,7 @@ const ArtPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPages, setItemPerPage] = useState(9);
   const [PageLoading, setPageLoading] = useState(true);
+  const [loadedItems, setLoadedItems] = useState(new Set());
   const [enlargeImageVisible, setEnlargeImageVisible] = useState(false);
   const [selectedEnlargedImage, setSelectedEnlargedImage] = useState('');
 
@@ -30,24 +31,30 @@ const ArtPage: React.FC = () => {
     setCurrentPage(totalPage);
   };
 
-  const pageSelection = (key : number) => {
+  const pageSelection = (key: number) => {
     setCurrentPage(key);
   };
 
-  const changeItemPerPage = (pages : number) => {
+  const changeItemPerPage = (pages: number) => {
     const newCurrentPage = Math.floor(((currentPage - 1) * itemsPerPages) / pages) + 1;
     setItemPerPage(pages);
     setCurrentPage(newCurrentPage);
   };
 
   useEffect(() => {
+    setPageLoading(true);
     const timer = setTimeout(() => {
       setPageLoading(false);
+      setLoadedItems((prevItems) => {
+        const newItems = new Set(prevItems);
+        currentItems.forEach(item => newItems.add(item.key));
+        return newItems;
+      });
     }, 200);
     return () => clearTimeout(timer);
-  }, [currentPage]);
+  }, [currentPage, itemsPerPages, currentItems]);
 
-  const selectEnlargeImage = (key : string) => {
+  const selectEnlargeImage = (key: string) => {
     setEnlargeImageVisible(true);
     setSelectedEnlargedImage(`https://drive.google.com/thumbnail?id=${key}&sz=w1000`);
   };
@@ -85,13 +92,13 @@ const ArtPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
           {currentItems.map((item) => (
             <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center">
-              {PageLoading ? (
+              {PageLoading && !loadedItems.has(item.key) ? (
                 <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
-                  <div className="flex items-center justify-center p-10">
-                    <div role="status" className="flex flex-col items-center justify-center space-y-4">
+                  <div className="flex items-center justify-center p-10 h-full w-fill">
+                    <div role="status" className="flex flex-col items-center justify-center space-y-4 ">
                       <svg
                         aria-hidden="true"
-                        className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                        className="inline w-full h-full text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
                         viewBox="0 0 100 101"
                         fill="none"
                       >
@@ -180,7 +187,7 @@ const ArtPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='py-4'></div>
+      <div className='py-'></div>
       <EnlargeImageModal image={selectedEnlargedImage} isVisible={enlargeImageVisible} onClose={closeEnlargeImage} />
     </div>
   );
