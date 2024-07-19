@@ -6,7 +6,7 @@ const LoadingSpinner = () => (
   <div className="flex items-center justify-center w-full h-full">
     <svg
       role="status"
-      className="w-16 h-16 text-gray-200 animate-spin fill-blue-600"
+      className="w-full h-full text-gray-200 animate-spin fill-blue-600"
       viewBox="0 0 100 101"
       fill="none"
     >
@@ -121,7 +121,7 @@ const ArtPage: React.FC = () => {
           {currentItems.map((item) => (
             <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center">
               {PageLoading && !loadedItems.has(item.key) ? (
-                <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
+                <div className="w-fill h-fill flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
                   <LoadingSpinner />
                 </div>
               ) : (
