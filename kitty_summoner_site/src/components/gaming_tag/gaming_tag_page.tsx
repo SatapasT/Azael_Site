@@ -10,7 +10,7 @@ import SmashUltimateIcon from '../../assets/images/smash_ultimate_icon.png'
 import VRChatIcon from '../../assets/images/VRChat_Icon.png'
 
 
-const GamingTagPage = () => {
+const GamingTagPage: React.FC = () => {
   return (
     <div className='flex flex-col items-center justify-start w-full h-screen'>
       <div className='py-2 text-white bg-clip-text text-8xl font-extrabold text-transparent text-center mt-4'>

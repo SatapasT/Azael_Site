@@ -27,7 +27,7 @@ const LoadingSpinner = () => (
   </div>
 );
 
-const FursonaPage = () => {
+const FursonaPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

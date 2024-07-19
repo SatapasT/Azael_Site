@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { HomePageItem } from "../../constants/home_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 
-const PhotoPage = () => {
+const PhotoPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPages, setItemPerPage] = useState(9);
   const [PageLoading, setPageLoading] = useState(true);

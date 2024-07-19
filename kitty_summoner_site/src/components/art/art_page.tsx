@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArtPageItem } from "../../constants/art_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 
-const ArtPage = () => {
+const ArtPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPages, setItemPerPage] = useState(9);
   const [PageLoading, setPageLoading] = useState(true);
