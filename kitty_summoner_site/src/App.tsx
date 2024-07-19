@@ -5,6 +5,7 @@ import PhotoPage from './components/photo/photo_page';
 import FursonaPage from './components/fursona/fursona_page';
 import GamingTagPage from './components/gaming_tag/gaming_tag_page';
 import NavBar from './components/navbar/navbar';
+import {Helmet} from "react-helmet";
 
 const App: React.FC = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -40,6 +41,18 @@ const App: React.FC = () => {
 
     return (
         <div className="flex flex-col min-h-screen">
+            <Helmet>
+                <title>Azael Goat</title>
+                <meta property="og:title" content="Azael" />
+                <meta property="og:description" content="Azael the Demon Goat Website" />
+                <meta property="og:image" content='https://drive.google.com/thumbnail?id=1_yHyU7WNKH2KD36yOi0JbLVRkrv9mv4t&sz=w1000' />
+                <meta property="og:url" content="https://azael.net" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Azael" />
+                <meta name="twitter:description" content="Azael the Demon Goat Website" />
+                <meta name="twitter:image" content='https://drive.google.com/thumbnail?id=1_yHyU7WNKH2KD36yOi0JbLVRkrv9mv4t&sz=w1000' />
+            </Helmet>
             <NavBar />
             <div className="flex-grow mt-16 overflow-auto">
                 {renderPage()}

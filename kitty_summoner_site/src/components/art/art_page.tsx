@@ -180,6 +180,7 @@ const ArtPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className='py-4'></div>
       <EnlargeImageModal image={selectedEnlargedImage} isVisible={enlargeImageVisible} onClose={closeEnlargeImage} />
     </div>
   );
