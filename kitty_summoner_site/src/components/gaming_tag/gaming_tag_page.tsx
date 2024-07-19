@@ -12,7 +12,7 @@ import VRChatIcon from '../../assets/images/VRChat_Icon.png'
 
 const GamingTagPage: React.FC = () => {
   return (
-    <div className='flex flex-col items-center justify-start w-full h-screen'>
+    <div className='flex flex-col items-center justify-start w-full min-h-screen pb-10'> {/* Added pb-10 for padding at the bottom */}
       <div className='py-2 text-white bg-clip-text text-8xl font-extrabold text-transparent text-center mt-4'>
         Main Games
       </div>
@@ -58,7 +58,7 @@ const GamingTagPage: React.FC = () => {
       <div className='text-white text-3xl mt-8 py-12'>
         Every Other Games
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-4 h-1/2 '>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-4 h-1/2 py-8'>
         <div className="h-1/5 md:ml-4 ">
           <a href='https://vrchat.com/home/user/usr_87bd4764-441e-40d7-ae6c-c82b91165f43' target="_blank" rel="noopener noreferrer">
             <img src={VRChatIcon} alt='Game 1' className='w-1/2 h-auto mx-auto' />
@@ -71,7 +71,6 @@ const GamingTagPage: React.FC = () => {
           </div>
         </div>
         <div className="h-1/5 md:ml-4 ">
-
           <a href='https://steamcommunity.com/id/KittySummoner/' target="_blank" rel="noopener noreferrer">
             <img src={SteamIcon} alt='Game 1' className='w-1/2 h-auto mx-auto' />
           </a>
@@ -142,7 +141,6 @@ const GamingTagPage: React.FC = () => {
             Kitty Summoner
           </div>
         </div>
-
       </div>
     </div>
   );
