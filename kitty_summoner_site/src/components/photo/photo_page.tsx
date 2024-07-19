@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HomePageItem } from "../../constants/home_page_item";
+import { HomePageItem } from "../../constants/photo_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 
 const PhotoPage: React.FC = () => {
