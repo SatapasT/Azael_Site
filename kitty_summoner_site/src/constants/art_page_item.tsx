@@ -1,16 +1,16 @@
-import AzaelHeadshot from "../assets/arts_images/azael_headshot.webp";
-import AzaelReferenceSheets from "../assets/arts_images/azael_reference_sheets.webp";
-import BiPrideIcon from "../assets/arts_images/bi_pride_icon.webp";
-import CultOfTheGoat from "../assets/arts_images/cult_of_the_goat.webp";
-import DemonSlayerCosplay from "../assets/arts_images/demon_slayer_cosplay.webp";
-import GateToHell from "../assets/arts_images/gate_to_hell.webp";
-import GoatSticker from "../assets/arts_images/goat_sticker.webp";
-import GoofyIcon from "../assets/arts_images/goofy_icon.webp";
-import HoodIcon from "../assets/arts_images/hood_icon.webp";
-import Maid from "../assets/arts_images/maid.webp";
-import SillyGoat from "../assets/arts_images/silly_goat.webp";
-import SparkleIcon from "../assets/arts_images/sparkle_icon.webp";
-import TooCoolForSchool from "../assets/arts_images/too_cool_for_school.webp";
+import AzaelHeadshot from "../assets/arts_images/azael_headshot.png";
+import AzaelReferenceSheets from "../assets/arts_images/azael_reference_sheets.png";
+import BiPrideIcon from "../assets/arts_images/bi_pride_icon.png";
+import CultOfTheGoat from "../assets/arts_images/cult_of_the_goat.png";
+import DemonSlayerCosplay from "../assets/arts_images/demon_slayer_cosplay.png";
+import GateToHell from "../assets/arts_images/gate_to_hell.jpg";
+import GoatSticker from "../assets/arts_images/goat_sticker.png";
+import GoofyIcon from "../assets/arts_images/goofy_icon.png";
+import HoodIcon from "../assets/arts_images/hood_icon.png";
+import Maid from "../assets/arts_images/maid.png";
+import SillyGoat from "../assets/arts_images/silly_goat.jpeg";
+import SparkleIcon from "../assets/arts_images/sparkle_icon.jpg";
+import TooCoolForSchool from "../assets/arts_images/too_cool_for_school.png";
 
 export const ArtPageItem = [
     {
