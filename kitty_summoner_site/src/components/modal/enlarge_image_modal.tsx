@@ -27,7 +27,7 @@ const EnlargeImageModal: React.FC<EnlargeImageModalProps> = ({ image, isVisible,
                 >
                     X
                 </button>
-                <img src={image} alt="Enlarged image" className="max-w-[95vw] max-h-[95vh] object-contain" />
+                <img loading='lazy' src={image} alt="Enlarged image" className="max-w-[95vw] max-h-[95vh] object-contain" />
             </div>
         </div>
     );

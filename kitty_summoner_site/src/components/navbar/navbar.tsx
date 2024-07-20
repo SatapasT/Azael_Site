@@ -6,7 +6,7 @@ import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import telegarmIcon from '../../assets/images/telegarm_icon.webp';
-import HamburgerMenu from './hambuger_menu';
+import HamburgerMenu from './hamburger_menu';
 
 const NavBar: React.FC = () => {
     const location = useLocation();
@@ -21,6 +21,7 @@ const NavBar: React.FC = () => {
             <div className='flex items-center px-5 lg:px-7.5 xl:px-10 h-16'>
                 <a className='block w-[12rem] xl:mr-8' href='#home'>
                     <img
+                        loading="lazy"
                         src={AzaelHeadshotImage}
                         width={70}
                         height={70}
@@ -45,16 +46,16 @@ const NavBar: React.FC = () => {
                 </nav>
                 <div className='hidden lg:flex relative top-0 flex-row justify-center bg-gradient-to-r items-center space-x-4'>
                     <a href='https://x.com/Azael_Goat' target='_blank' rel='noopener noreferrer'>
-                        <img src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
+                        <img loading="lazy" src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.tiktok.com/@azael_goat' target='_blank' rel='noopener noreferrer'>
-                        <img src={tiktokIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
+                        <img loading="lazy" src={tiktokIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
-                        <img src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
+                        <img loading="lazy" src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://t.me/KittySummoner' target='_blank' rel='noopener noreferrer'>
-                        <img src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
+                        <img loading="lazy" src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
                 <div className={`lg:hidden ml-auto`}>

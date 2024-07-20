@@ -18,6 +18,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                 <div className='flex justify-center w-full py-4'>
                     <a className='block' href='#home'>
                         <img
+                            loading='lazy'
                             src={AzaelHeadshotImage}
                             width={70}
                             height={70}
@@ -38,16 +39,16 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                 </div>
                 <div className='flex flex-row justify-center items-center space-x-4 py-4'>
                     <a href='https://x.com/Azael_Goat' target='_blank' rel='noopener noreferrer'>
-                        <img src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
+                        <img loading='lazy' src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.tiktok.com/@azael_goat' target='_blank' rel='noopener noreferrer'>
-                        <img src={tiktokIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
+                        <img loading='lazy' src={tiktokIcon} alt='TikTok Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
-                        <img src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
+                        <img loading='lazy' src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
                     </a>
                     <a href='https://t.me/KittySummoner' target='_blank' rel='noopener noreferrer'>
-                        <img src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
+                        <img loading='lazy' src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
             </div>
