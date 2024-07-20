@@ -3,7 +3,6 @@ import { ArtPageItem } from "../../constants/art_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 
 const LoadingSpinner = () => (
-  
   <div className="flex items-center justify-center h-1/5">
     <svg
       role="status"
@@ -25,16 +24,16 @@ const LoadingSpinner = () => (
 
 const ArtPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPages, setItemPerPage] = useState(9);
-  const [PageLoading, setPageLoading] = useState(true);
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [pageLoading, setPageLoading] = useState(true);
   const [loadedItems, setLoadedItems] = useState(new Set());
   const [enlargeImageVisible, setEnlargeImageVisible] = useState(false);
   const [selectedEnlargedImage, setSelectedEnlargedImage] = useState('');
 
-  const totalPage = Math.ceil(ArtPageItem.length / itemsPerPages);
+  const totalPage = Math.ceil(ArtPageItem.length / itemsPerPage);
 
-  const startIndex = (currentPage - 1) * itemsPerPages;
-  const currentItems = ArtPageItem.slice(startIndex, startIndex + itemsPerPages);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentItems = ArtPageItem.slice(startIndex, startIndex + itemsPerPage);
 
   const nextPage = () => {
     setCurrentPage(currentPage + 1);
@@ -56,9 +55,9 @@ const ArtPage: React.FC = () => {
     setCurrentPage(key);
   };
 
-  const changeItemPerPage = (pages: number) => {
-    const newCurrentPage = Math.floor(((currentPage - 1) * itemsPerPages) / pages) + 1;
-    setItemPerPage(pages);
+  const changeItemsPerPage = (pages: number) => {
+    const newCurrentPage = Math.floor(((currentPage - 1) * itemsPerPage) / pages) + 1;
+    setItemsPerPage(pages);
     setCurrentPage(newCurrentPage);
   };
 
@@ -80,8 +79,11 @@ const ArtPage: React.FC = () => {
         currentItems.forEach(item => newItems.add(item.key));
         return newItems;
       });
+    }).catch(error => {
+      console.error("Error loading images:", error);
+      setPageLoading(false);
     });
-  }, [currentPage, itemsPerPages, currentItems]);
+  }, [currentPage, itemsPerPage, currentItems]);
 
   const selectEnlargeImage = (key: string) => {
     setEnlargeImageVisible(true);
@@ -89,7 +91,7 @@ const ArtPage: React.FC = () => {
   };
 
   const closeEnlargeImage = () => {
-    setEnlargeImageVisible(!enlargeImageVisible);
+    setEnlargeImageVisible(false);
   };
 
   return (
@@ -101,19 +103,19 @@ const ArtPage: React.FC = () => {
           </div>
           <button
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemPerPage(3)}
+            onClick={() => changeItemsPerPage(3)}
           >
             3
           </button>
           <button
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemPerPage(9)}
+            onClick={() => changeItemsPerPage(9)}
           >
             9
           </button>
           <button
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemPerPage(27)}
+            onClick={() => changeItemsPerPage(27)}
           >
             27
           </button>
@@ -121,7 +123,7 @@ const ArtPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
           {currentItems.map((item) => (
             <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center">
-              {PageLoading && !loadedItems.has(item.key) ? (
+              {pageLoading && !loadedItems.has(item.key) ? (
                 <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
                   <LoadingSpinner />
                 </div>
@@ -153,17 +155,17 @@ const ArtPage: React.FC = () => {
           <div className="flex space-x-2 opacity-95">
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-      ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
+              ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
               onClick={firstPage}
-              disabled={currentPage === 1 ? true : false}
+              disabled={currentPage === 1}
             >
               First
             </button>
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-l 
-      ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r ' : ''}`}
+              ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r ' : ''}`}
               onClick={previousPage}
-              disabled={currentPage === 1 ? true : false}
+              disabled={currentPage === 1}
             >
               Prev
             </button>
@@ -171,10 +173,10 @@ const ArtPage: React.FC = () => {
               <button
                 key={index}
                 className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-        ${currentPage === index + 1 ? 'bg-gray-500' : 'bg-white'}
-        ${index > currentPage + 1 ? 'hidden' : ''}
-        ${index < currentPage - 3 ? 'hidden' : ''}
-      `}
+                ${currentPage === index + 1 ? 'bg-gray-500' : 'bg-white'}
+                ${index > currentPage + 1 ? 'hidden' : ''}
+                ${index < currentPage - 3 ? 'hidden' : ''}
+                `}
                 onClick={() => pageSelection(index + 1)}
               >
                 {index + 1}
@@ -182,17 +184,17 @@ const ArtPage: React.FC = () => {
             ))}
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-      ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
+              ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
               onClick={nextPage}
-              disabled={currentPage === totalPage ? true : false}
+              disabled={currentPage === totalPage}
             >
               Next
             </button>
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-      ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
+              ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
               onClick={lastPage}
-              disabled={currentPage === totalPage ? true : false}
+              disabled={currentPage === totalPage}
             >
               Last
             </button>

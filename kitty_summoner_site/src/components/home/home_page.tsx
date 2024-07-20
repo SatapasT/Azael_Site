@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../../assets/styles.css';
-import xIcon from '../../assets/images/x_icon.png';
-import tiktokIcon from '../../assets/images/tiktok_icon.png';
-import instagarmIcon from '../../assets/images/instagram_icon.png';
-import telegarmIcon from '../../assets/images/telegarm_icon.png';
-import munchingGrassIcon from '../../assets/images/munching_grass.png';
-import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
+import xIcon from '../../assets/images/x_icon.webp';
+import tiktokIcon from '../../assets/images/tiktok_icon.webp';
+import instagarmIcon from '../../assets/images/instagram_icon.webp';
+import telegarmIcon from '../../assets/images/telegarm_icon.webp';
+import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
 
 const LoadingSpinner = () => (
     <div className="flex items-center justify-center w-full h-screen">
@@ -36,7 +35,6 @@ const HomePage: React.FC = () => {
             tiktokIcon,
             instagarmIcon,
             telegarmIcon,
-            munchingGrassIcon,
             AzaelHeadshotImage,
         ].map(src => {
             return new Promise(resolve => {

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import AzaelHeadshotImage from '../../assets/images/azael_headshot.png';
+import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
 import { Items } from '../../constants/item';
-import xIcon from '../../assets/images/x_icon.png';
-import tiktokIcon from '../../assets/images/tiktok_icon.png';
-import instagarmIcon from '../../assets/images/instagram_icon.png';
-import telegarmIcon from '../../assets/images/telegarm_icon.png';
+import xIcon from '../../assets/images/x_icon.webp';
+import tiktokIcon from '../../assets/images/tiktok_icon.webp';
+import instagarmIcon from '../../assets/images/instagram_icon.webp';
+import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 import HamburgerMenu from './hambuger_menu';
 
 const NavBar: React.FC = () => {

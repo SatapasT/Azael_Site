@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import RefSheet from '../../assets/images/ref_sheet.png';
-import Sticker1 from '../../assets/images/sticker_1.png';
-import Sticker2 from '../../assets/images/sticker_2.png';
-import Sticker3 from '../../assets/images/sticker_3.png';
-import Sticker4 from '../../assets/images/sticker_4.png';
-import Sticker5 from '../../assets/images/sticker_5.png';
-import munchingGrassIcon from '../../assets/images/sticker_3.png';
+import RefSheet from '../../assets/images/ref_sheet.webp';
+import Sticker1 from '../../assets/images/sticker_1.webp';
+import Sticker2 from '../../assets/images/sticker_2.webp';
+import Sticker3 from '../../assets/images/sticker_3.webp';
+import Sticker4 from '../../assets/images/sticker_4.webp';
+import Sticker5 from '../../assets/images/sticker_5.webp';
+import munchingGrassIcon from '../../assets/images/sticker_3.webp';
 
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center w-full h-screen">
