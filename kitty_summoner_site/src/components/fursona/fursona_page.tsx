@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RefSheet from '../../assets/images/ref_sheet.webp';
+import RefSheetDownload from '../../assets/images/ref_sheet_download.png';
 import Sticker1 from '../../assets/images/sticker_1.webp';
 import Sticker2 from '../../assets/images/sticker_2.webp';
 import Sticker3 from '../../assets/images/sticker_3.webp';
@@ -102,7 +103,7 @@ const FursonaPage: React.FC = () => {
           </a>
         </div>
         <div className='flex flex-col items-center justify-center w-full relative flex-1'>
-          <a href={RefSheet} download="ReferenceSheet.png" className='text-white'>
+          <a href={RefSheetDownload} download="Azael Reference Sheet" className='text-white'>
             <img
               src={RefSheet}
               title='Reference Sheet'

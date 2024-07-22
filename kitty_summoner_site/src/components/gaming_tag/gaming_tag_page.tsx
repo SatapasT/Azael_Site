@@ -70,7 +70,7 @@ const GamingTagPage:React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 p-4 h-1/2 py-8">
         <div className="h-1/5 md:ml-4">
           <a href="https://www.op.gg/summoners/euw/Kitty%20Summoner-Meow" target="_blank" rel="noopener noreferrer">
-            <img src={LeagueIcon} alt="League of Legends" className="w-1/2 h-auto mx-auto" />
+            <img src={LeagueIcon} alt="League of Legends" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl">
             League of Legends
@@ -81,7 +81,7 @@ const GamingTagPage:React.FC = () => {
         </div>
         <div className="h-1/5 md:ml-4">
           <a href="https://eu.finalfantasyxiv.com/lodestone/character/36651684/" target="_blank" rel="noopener noreferrer">
-            <img src={FinalFantasyIcon} alt="Final Fantasy XIV" className="w-1/2 h-auto mx-auto" />
+            <img src={FinalFantasyIcon} alt="Final Fantasy XIV" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl">
             Final Fantasy XIV
@@ -97,7 +97,7 @@ const GamingTagPage:React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-4 h-1/2 py-8">
         <div className="h-1/5 md:ml-4 ">
           <a href="https://vrchat.com/home/user/usr_87bd4764-441e-40d7-ae6c-c82b91165f43" target="_blank" rel="noopener noreferrer">
-            <img src={VRChatIcon} alt="VRChat" className="w-1/2 h-auto mx-auto" />
+            <img src={VRChatIcon} alt="VRChat" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             VRChat
@@ -108,7 +108,7 @@ const GamingTagPage:React.FC = () => {
         </div>
         <div className="h-1/5 md:ml-4 ">
           <a href="https://steamcommunity.com/id/KittySummoner/" target="_blank" rel="noopener noreferrer">
-            <img src={SteamIcon} alt="Steam" className="w-1/2 h-auto mx-auto" />
+            <img src={SteamIcon} alt="Steam" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             Steam
@@ -120,7 +120,7 @@ const GamingTagPage:React.FC = () => {
 
         <div className="h-1/5 md:ml-4 ">
           <a href="https://tracker.gg/valorant/profile/riot/Kitty%20Summoner%23Sugar/overview" target="_blank" rel="noopener noreferrer">
-            <img src={ValorantIcon} alt="Valorant" className="w-1/2 h-auto mx-auto" />
+            <img src={ValorantIcon} alt="Valorant" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             Valorant
@@ -132,7 +132,7 @@ const GamingTagPage:React.FC = () => {
 
         <div className="h-1/5 md:ml-4 ">
           <a href="https://www.clashofstats.com/players/gentlemen-gnar-9LPPQJCG/army#tabs" target="_blank" rel="noopener noreferrer">
-            <img src={ClashOfClanIcon} alt="Clash of Clans" className="w-1/2 h-auto mx-auto" />
+            <img src={ClashOfClanIcon} alt="Clash of Clans" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             Clash of Clans
@@ -156,7 +156,7 @@ const GamingTagPage:React.FC = () => {
 
         <div className="h-1/5 md:ml-4 ">
           <a href="https://fortnitetracker.com/profile/all/Kitty%20Summoner" target="_blank" rel="noopener noreferrer">
-            <img src={FortniteIcon} alt="Fortnite" className="w-1/2 h-auto mx-auto" />
+            <img src={FortniteIcon} alt="Fortnite" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             Fortnite
@@ -168,7 +168,7 @@ const GamingTagPage:React.FC = () => {
 
         <div className="h-1/5 md:ml-4 ">
           <a href="https://www.pgstats.com/ultimate/player/Kitty%20Summoner?id=S3824793" target="_blank" rel="noopener noreferrer">
-            <img src={SmashUltimateIcon} alt="Smash Ultimate" className="w-1/2 h-auto mx-auto" />
+            <img src={SmashUltimateIcon} alt="Smash Ultimate" className="w-1/2 h-auto mx-auto enlarge" />
           </a>
           <div className="text-white text-center text-2xl ">
             Smash Ultimate
