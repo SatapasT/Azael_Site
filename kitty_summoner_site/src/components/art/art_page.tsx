@@ -66,9 +66,9 @@ const ArtPage: React.FC = () => {
     });
   }, [currentPage, itemsPerPage, currentItems]);
 
-  const selectEnlargeImage = (imageName: string) => {
+  const selectEnlargeImage = (imageHD: string) => {
     setEnlargeImageVisible(true);
-    setSelectedEnlargedImage(imageName);
+    setSelectedEnlargedImage(imageHD);
   };
 
   const closeEnlargeImage = () => {
@@ -116,7 +116,7 @@ const ArtPage: React.FC = () => {
                         alt="gallery"
                         className="w-full h-full object-contain rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
                         src={item.imageName}
-                        onClick={() => selectEnlargeImage(item.imageName)}
+                        onClick={() => selectEnlargeImage(item.imageHD)}
                       />
                     </a>
                   </div>
