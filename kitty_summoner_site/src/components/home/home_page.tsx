@@ -6,6 +6,8 @@ import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
 import LoadingSpinner from "../loading_spinner"
+import TwitchIcon from '../../assets/images/twitch_icon.webp';
+import YoutubeIcon from '../../assets/images/youtube_icon.webp'
 
 const HomePage: React.FC = () => {
     const [loading, setLoading] = useState(true);
@@ -52,12 +54,18 @@ const HomePage: React.FC = () => {
                 <div className='w-1/2 py-10 flex justify-center'>
                     <hr className='w-3/4 border-t-2 border-gradient-to-r from-red-400 via-orange-400 to-pink-400' />
                 </div>
-                <div className='flex flex-row justify-center items-center space-x-4'>
+                <div className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 justify-center items-center'>
+                    <a href="https://www.twitch.tv/azaelgoat" target="_blank" rel="noopener noreferrer">
+                        <img src={TwitchIcon} alt="Telegram Social Media" className="enlarge uniform-size" />
+                    </a>
                     <a href="https://x.com/Azael_Goat" target="_blank" rel="noopener noreferrer">
                         <img src={xIcon} alt="X Social Media" className="enlarge uniform-size" />
                     </a>
                     <a href="https://www.tiktok.com/@azael_goat" target="_blank" rel="noopener noreferrer">
                         <img src={tiktokIcon} alt="TikTok Social Media" className="enlarge uniform-size" />
+                    </a>
+                    <a href="https://www.youtube.com/@AzaelGoat" target="_blank" rel="noopener noreferrer">
+                        <img src={YoutubeIcon} alt="Instagram Social Media" className="enlarge uniform-size" />
                     </a>
                     <a href="https://www.instagram.com/azael_goat/" target="_blank" rel="noopener noreferrer">
                         <img src={instagarmIcon} alt="Instagram Social Media" className="enlarge uniform-size" />

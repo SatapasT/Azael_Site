@@ -3,8 +3,11 @@ import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
-import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
+import TwitchIcon from '../../assets/images/twitch_icon.webp'; 
+import YoutubeIcon from '../../assets/images/youtube_icon.webp'
+
+
 
 type HamburgerMenuProps = {
     isOpen: boolean;
@@ -37,7 +40,10 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                         </a>
                     ))}
                 </div>
-                <div className='flex flex-row justify-center items-center space-x-4 py-4'>
+                <div className='flex flex-row justify-center items-center space-x-4 py-16'>
+                    <a href="https://www.twitch.tv/azaelgoat" target="_blank" rel="noopener noreferrer">
+                        <img src={TwitchIcon} alt="Telegram Social Media" className="enlarge nav-icon" />
+                    </a>
                     <a href='https://x.com/Azael_Goat' target='_blank' rel='noopener noreferrer'>
                         <img loading='lazy' src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
                     </a>
@@ -47,8 +53,8 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
                         <img loading='lazy' src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
                     </a>
-                    <a href='https://t.me/KittySummoner' target='_blank' rel='noopener noreferrer'>
-                        <img loading='lazy' src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
+                    <a href='https://www.youtube.com/@AzaelGoat' target='_blank' rel='noopener noreferrer'>
+                        <img loading='lazy' src={YoutubeIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
             </div>

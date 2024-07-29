@@ -5,8 +5,10 @@ import { Items } from '../../constants/item';
 import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
-import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 import HamburgerMenu from './hamburger_menu';
+import TwitchIcon from '../../assets/images/twitch_icon.webp'; 
+import YoutubeIcon from '../../assets/images/youtube_icon.webp'
+
 
 const NavBar: React.FC = () => {
     const location = useLocation();
@@ -45,6 +47,9 @@ const NavBar: React.FC = () => {
                     </div>
                 </nav>
                 <div className='hidden lg:flex relative top-0 flex-row justify-center bg-gradient-to-r items-center space-x-4'>
+                    <a href="https://www.twitch.tv/azaelgoat" target="_blank" rel="noopener noreferrer">
+                        <img src={TwitchIcon} alt="Telegram Social Media" className="enlarge nav-icon" />
+                    </a>
                     <a href='https://x.com/Azael_Goat' target='_blank' rel='noopener noreferrer'>
                         <img loading="lazy" src={xIcon} alt='X Social Media' className='enlarge nav-icon' />
                     </a>
@@ -54,8 +59,8 @@ const NavBar: React.FC = () => {
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
                         <img loading="lazy" src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
                     </a>
-                    <a href='https://t.me/KittySummoner' target='_blank' rel='noopener noreferrer'>
-                        <img loading="lazy" src={telegarmIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
+                    <a href='https://www.youtube.com/@AzaelGoat' target='_blank' rel='noopener noreferrer'>
+                        <img loading="lazy" src={YoutubeIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
                 <div className={`lg:hidden ml-auto`}>

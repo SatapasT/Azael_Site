@@ -183,7 +183,10 @@ const ArtPage: React.FC = () => {
         </div>
       </div>
       <div className='py-'></div>
-      <EnlargeImageModal image={selectedEnlargedImage} isVisible={enlargeImageVisible} onClose={closeEnlargeImage} />
+      <EnlargeImageModal 
+      image={selectedEnlargedImage} 
+      isVisible={enlargeImageVisible} 
+      onClose={closeEnlargeImage} />
     </div>
   );
 };
