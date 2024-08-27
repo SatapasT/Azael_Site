@@ -121,7 +121,7 @@ const ArtPage: React.FC = () => {
                     </a>
                   </div>
                   <div className="text-center font-bold mt-2 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                    <a href={item.imageName} target='_blank' rel='noopener noreferrer'>
+                    <a href={item.link} target='_blank' rel='noopener noreferrer'>
                       {item.artist}
                     </a>
                   </div>
