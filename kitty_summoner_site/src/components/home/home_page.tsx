@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
                     {title}
                 </div>
                 <div className='w-1/2 py-5 flex justify-center'>
-                    <hr className='w-screen border-t-2' />
+                    <hr className='w-1/2 border-t-2' />
                 </div>
 
                 <div className=' text-center flex items-center justify-center bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent select-auto pb-5'>
