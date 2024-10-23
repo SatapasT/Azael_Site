@@ -7,8 +7,6 @@ import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import HamburgerMenu from './hamburger_menu';
 import TwitchIcon from '../../assets/images/twitch_icon.webp'; 
-import YoutubeIcon from '../../assets/images/youtube_icon.webp'
-import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 
 
 const NavBar: React.FC = () => {
