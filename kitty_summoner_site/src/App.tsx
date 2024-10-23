@@ -71,6 +71,7 @@ const App: React.FC = () => {
                     </CSSTransition>
                 </TransitionGroup>
             </div>
+            
         </div>
     );
 };

@@ -54,7 +54,10 @@ const HomePage: React.FC = () => {
                 <div className='w-1/2 py-10 flex justify-center'>
                     <hr className='w-3/4 border-t-2 border-gradient-to-r from-red-400 via-orange-400 to-pink-400' />
                 </div>
-                <div className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 justify-center items-center'>
+                <div className='border-4 rounded-lg border-orange-600 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#8b0000,0_0_15px_#8b0000,0_0_30px_#8b0000]'>                <div className='text-white font-extrabold pt-5 pl-5 pr-5 text-center'>
+                    He/Him - Demon Goat - Study CS
+                </div>
+                <div className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-4 justify-center items-center p-4'>
                     <a href="https://www.twitch.tv/azaelgoat" target="_blank" rel="noopener noreferrer">
                         <img src={TwitchIcon} alt="Telegram Social Media" className="enlarge uniform-size" />
                     </a>
@@ -74,9 +77,9 @@ const HomePage: React.FC = () => {
                         <img src={telegarmIcon} alt="Telegram Social Media" className="enlarge uniform-size" />
                     </a>
                 </div>
-                <div className='text-red-600 font-extrabold py-5'>
-                    SOME PAGE IS STILL UNDER WORK, MANY OF THE STUFF NOT ADDED YET
                 </div>
+                
+                
             </div>
         </div>
     );
