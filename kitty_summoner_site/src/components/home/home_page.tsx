@@ -39,11 +39,11 @@ const HomePage: React.FC = () => {
 
     return (
         <div className='flex items-center justify-center w-full h-fill'>
-            <div className='flex flex-col items-center justify-center w-full h-full pb-12 pt-5'>
+            <div className='flex flex-col items-center justify-center w-full h-full pb-12 pt-10 '>
                 <img
                     src={AzaelHeadshotImage}
                     alt='Azael Icon'
-                    className='p-2 box-border w-1/5 h-auto'
+                    className='p-2 box-border w-1/5 h-auto border-2 rounded-lg border-red-600 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#8b0000,0_0_15px_#8b0000,0_0_30px_#8b0000]'
                 />
                 <div className='py-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-8xl font-extrabold text-transparent text-center select-auto animate-glow'>
                     Azael
