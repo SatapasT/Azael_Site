@@ -8,6 +8,7 @@ import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import HamburgerMenu from './hamburger_menu';
 import TwitchIcon from '../../assets/images/twitch_icon.webp'; 
 import YoutubeIcon from '../../assets/images/youtube_icon.webp'
+import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 
 
 const NavBar: React.FC = () => {
@@ -58,9 +59,6 @@ const NavBar: React.FC = () => {
                     </a>
                     <a href='https://www.instagram.com/azael_goat/' target='_blank' rel='noopener noreferrer'>
                         <img loading="lazy" src={instagarmIcon} alt='Instagram Social Media' className='enlarge nav-icon' />
-                    </a>
-                    <a href='https://www.youtube.com/@AzaelGoat' target='_blank' rel='noopener noreferrer'>
-                        <img loading="lazy" src={YoutubeIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
                     </a>
                 </div>
                 <div className={`lg:hidden ml-auto`}>
