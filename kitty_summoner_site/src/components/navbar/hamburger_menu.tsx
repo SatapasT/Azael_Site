@@ -6,7 +6,7 @@ import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
 import TwitchIcon from '../../assets/images/twitch_icon.webp'; 
 import YoutubeIcon from '../../assets/images/youtube_icon.webp'
-
+import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 
 
 type HamburgerMenuProps = {
@@ -55,6 +55,9 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                     </a>
                     <a href='https://www.youtube.com/@AzaelGoat' target='_blank' rel='noopener noreferrer'>
                         <img loading='lazy' src={YoutubeIcon} alt='Telegram Social Media' className='enlarge nav-icon' />
+                    </a>
+                    <a href="https://t.me/KittySummoner" target="_blank" rel="noopener noreferrer">
+                        <img src={telegarmIcon} alt="Telegram Social Media" className="enlarge nav-icon" />
                     </a>
                 </div>
             </div>
