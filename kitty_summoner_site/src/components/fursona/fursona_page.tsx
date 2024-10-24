@@ -60,13 +60,13 @@ const FursonaPage: React.FC = () => {
             </a>
           </div>
           <div className='flex flex-col items-center justify-center w-full relative flex-1'>
-            <a href={RefSheetDownload} download="Azael Reference Sheet" className='text-white'>
-              <img
-                src={RefSheet}
-                title='Reference Sheet'
-                className='w-full max-w-xs md:max-w-md h-auto hover:scale-110 transition-transform duration-300'
-              />
-            </a>
+          <a href={RefSheetDownload} download="Azael Reference Sheet" className='text-white'>
+            <img
+              src={RefSheet}
+              title='Reference Sheet'
+              className='w-auto max-w-xs lg:max-w-2xl h-auto hover:scale-110 transition-transform duration-300'
+            />
+          </a>
             <div className='text-white text-center pt-5'>
               Click to download!
             </div>

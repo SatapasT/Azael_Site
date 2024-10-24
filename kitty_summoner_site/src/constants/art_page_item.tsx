@@ -31,6 +31,13 @@ import RoomateWithPadHD from "../assets/arts_images/roomate_with_pad_hd.png";
 
 export const ArtPageItem = [
     {
+        key: 8,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: AzaelReferenceSheets,
+        imageHD: AzaelReferenceSheetsHD,
+    },
+    {
         key: 13,
         artist: 'X | Twitter @LoveIock_',
         link: 'https://x.com/LoveIock_',
@@ -92,13 +99,6 @@ export const ArtPageItem = [
         link: 'https://x.com/LoveIock_',
         imageName: GoatSticker,
         imageHD: GoatStickerHD,
-    },
-    {
-        key: 8,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: AzaelReferenceSheets,
-        imageHD: AzaelReferenceSheetsHD,
     },
     {
         key: 9,

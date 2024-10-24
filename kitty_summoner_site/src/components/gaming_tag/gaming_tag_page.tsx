@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import LeagueIcon from '../../assets/images/league_icon.webp';
 import FinalFantasyIcon from '../../assets/images/final_fantasy_xiv_icon.webp';
 import SteamIcon from '../../assets/images/steam_icon.webp';
@@ -8,38 +7,8 @@ import OverwatchIcon from '../../assets/images/overwatch_icon.webp';
 import FortniteIcon from '../../assets/images/fortnite_icon.webp';
 import SmashUltimateIcon from '../../assets/images/smash_ultimate_icon.webp';
 import VRChatIcon from '../../assets/images/VRChat_Icon.webp';
-import LoadingSpinner from "../loading_spinner"
-
 
 const GamingTagPage:React.FC = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const imagePromises = [
-      LeagueIcon,
-      FinalFantasyIcon,
-      SteamIcon,
-      ValorantIcon,
-      ClashOfClanIcon,
-      OverwatchIcon,
-      FortniteIcon,
-      SmashUltimateIcon,
-      VRChatIcon,
-    ].map(src => {
-      return new Promise(resolve => {
-        const img = new Image();
-        img.src = src;
-        img.onload = resolve;
-        img.onerror = resolve;
-      });
-    });
-
-    Promise.all(imagePromises).then(() => setLoading(false));
-  }, []);
-
-  if (loading) {
-    return <LoadingSpinner />;
-  }
 
   return (
     <div className="flex flex-col items-center justify-start w-full min-h-screen pb-10">
