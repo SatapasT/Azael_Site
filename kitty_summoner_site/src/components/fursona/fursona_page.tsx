@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import RefSheet from '../../assets/images/ref_sheet.webp';
 import RefSheetDownload from '../../assets/images/ref_sheet_download.png';
 import Sticker1 from '../../assets/images/sticker_1.webp';
@@ -7,41 +6,14 @@ import Sticker3 from '../../assets/images/sticker_3.webp';
 import Sticker4 from '../../assets/images/sticker_4.webp';
 import Sticker5 from '../../assets/images/sticker_5.webp';
 import munchingGrassIcon from '../../assets/images/sticker_3.webp';
-import LoadingSpinner from "../loading_spinner"
 import VRchat_Model_1 from '../../assets/images/vrchat_model_1.webp';
 import VRchat_Model_2 from '../../assets/images/vrchat_model_2.webp';
 import Cult_Caprine from '../../assets/images/cult_caprine.webp';
 
 const FursonaPage: React.FC = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const imagePromises = [
-      RefSheet,
-      Sticker1,
-      Sticker2,
-      Sticker3,
-      Sticker4,
-      Sticker5,
-      munchingGrassIcon,
-    ].map(src => {
-      return new Promise(resolve => {
-        const img = new Image();
-        img.src = src;
-        img.onload = resolve;
-        img.onerror = resolve;
-      });
-    });
-
-    Promise.all(imagePromises).then(() => setLoading(false));
-  }, []);
-
-  if (loading) {
-    return <LoadingSpinner />;
-  }
 
   return (
-    <div className="container py-1 lg:px-32 lg:pt-2 min-h-screen flex flex-col">
+    <div className="container mx-auto">
       <div className='flex items-center justify-center w-full h-fill'>
         <div className='flex flex-col md:flex-row items-center justify-center w-full h-full py-12'>
           <div className='flex flex-col items-center flex-1'>
@@ -92,22 +64,26 @@ const FursonaPage: React.FC = () => {
               <img
                 src={RefSheet}
                 title='Reference Sheet'
-                className='w-fill h-auto hover:scale-110 transition-transform duration-300'
+                className='w-full max-w-xs md:max-w-md h-auto hover:scale-110 transition-transform duration-300'
               />
             </a>
-            <div className='text-white text-center mt-2'>
+            <div className='text-white text-center pt-5'>
               Click to download!
             </div>
           </div>
         </div>
       </div>
+      <div className='w-full flex justify-center items-center py-10'>
+        <hr className='w-11/12 border-t-2' />
+      </div>
+        
       <div className='flex items-center justify-center w-full h-full'>
-        <div className='flex flex-col md:flex-row items-center justify-center w-full h-full'>
-          <div className='flex md:flex-col pb-5'>
+        <div className='flex flex-col xl:flex-row items-center justify-center w-full h-full'>
+          <div className='flex justify-center items-center space-x-4'>
             <img
               src={VRchat_Model_1}
               title='VR model 1'
-              className='w-auto h-auto max-w-xs md:max-w-md'
+              className=' w-auto h-auto max-w-xs md:max-w-md '
             />
             <img
               src={VRchat_Model_2}
@@ -115,31 +91,40 @@ const FursonaPage: React.FC = () => {
               className='w-auto h-auto max-w-xs md:max-w-md'
             />
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className='text-white mt-2 text-4xl text-center flex items-center justify-center font-semibold'>
-              VRChat and stream V-tuber model!
+          <div className="flex flex-col items-center justify-center pb-5 w-auto">
+            <div className='bg-gradient-to-r from-orange-500 via-red-400 to-red-500 bg-clip-text  text-transparent mt-2 text-4xl text-center flex items-center justify-center font-semibold '>
+              VRChat and V-tuber model!
             </div>
-            <div className='text-white mt-2 text-2xl text-center flex items-center justify-center'>
+            <div className='text-white mb-2 text-2xl text-center flex items-center justify-center '>
               Base model by&nbsp;
               <a className="underline text-blue-500" href="https://x.com/wolkehond?lang=en" target="_blank" rel="noopener noreferrer">
                 Wolke
               </a>
             </div>
-            <a className='underline text-blue-500 text-center flex items-center justify-center pt-5' href="https://x.com/wolkehond?lang=en" target="_blank" rel="noopener noreferrer">
+            <a className='underline text-blue-500 text-center flex items-center justify-center pt-5' 
+            href="https://wolkehond.gumroad.com/l/caprine" 
+            target="_blank" 
+            rel="noopener noreferrer">
               Cult Caprine | VRC Avatar + Vtuber | v. 1.1
             </a>
-            <img
+            <a 
+              href="https://wolkehond.gumroad.com/l/caprine"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-1/2 h-auto max-w-xs md:max-w-md pt-3"
+              title='Cult Caprine'
+            >
+              <img
               src={Cult_Caprine}
-              title='VR model 2'
-              className='w-1/2 h-auto max-w-xs md:max-w-md pt-5'
+              title='Cult Caprine'
+              className="enlarge"
             />
+            </a>
           </div>
+          
         </div>
       </div>
     </div>
-
-
-
   );
 };
 
