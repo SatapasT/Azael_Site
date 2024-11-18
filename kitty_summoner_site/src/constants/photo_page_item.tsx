@@ -12,7 +12,6 @@ import SillyGoat from "../assets/arts_images/silly_goat.webp";
 import SparkleIcon from "../assets/arts_images/sparkle_icon.webp";
 import TooCoolForSchool from "../assets/arts_images/too_cool_for_school.webp";
 import RoomateWithPad from "../assets/arts_images/roomate_with_pad.webp";
-
 import AzaelHeadshotHD from "../assets/arts_images/azael_headshot_hd.png";
 import AzaelReferenceSheetsHD from "../assets/arts_images/azael_reference_sheets_hd.png";
 import BiPrideIconHD from "../assets/arts_images/bi_pride_icon_hd.png";
