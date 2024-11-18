@@ -1,41 +1,15 @@
-import React, { useState, useEffect } from 'react';
 import '../../assets/styles.css';
 import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
 import telegarmIcon from '../../assets/images/telegarm_icon.webp';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
-import LoadingSpinner from "../loading_spinner"
 import TwitchIcon from '../../assets/images/twitch_icon.webp';
 import YoutubeIcon from '../../assets/images/youtube_icon.webp'
 
 const HomePage: React.FC = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const imagePromises = [
-            xIcon,
-            tiktokIcon,
-            instagarmIcon,
-            telegarmIcon,
-            AzaelHeadshotImage,
-        ].map(src => {
-            return new Promise(resolve => {
-                const img = new Image();
-                img.src = src;
-                img.onload = resolve;
-                img.onerror = resolve;
-            });
-        });
-
-        Promise.all(imagePromises).then(() => setLoading(false));
-    }, []);
 
     const title = " '  Kitty Summoner ' ";
-
-    if (loading) {
-        return <LoadingSpinner />;
-    }
 
     return (
         <div className='flex items-center justify-center w-full h-fill'>

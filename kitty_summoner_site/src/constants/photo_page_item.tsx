@@ -1,247 +1,131 @@
-export const HomePageItem = [
+import AzaelHeadshot from "../assets/arts_images/azael_headshot.webp";
+import AzaelReferenceSheets from "../assets/arts_images/azael_reference_sheets.webp";
+import BiPrideIcon from "../assets/arts_images/bi_pride_icon.webp";
+import CultOfTheGoat from "../assets/arts_images/cult_of_the_goat.webp";
+import DemonSlayerCosplay from "../assets/arts_images/demon_slayer_cosplay.webp";
+import GateToHell from "../assets/arts_images/gate_to_hell.webp";
+import GoatSticker from "../assets/arts_images/goat_sticker.webp";
+import GoofyIcon from "../assets/arts_images/goofy_icon.webp";
+import HoodIcon from "../assets/arts_images/hood_icon.webp";
+import Maid from "../assets/arts_images/maid.webp";
+import SillyGoat from "../assets/arts_images/silly_goat.webp";
+import SparkleIcon from "../assets/arts_images/sparkle_icon.webp";
+import TooCoolForSchool from "../assets/arts_images/too_cool_for_school.webp";
+import RoomateWithPad from "../assets/arts_images/roomate_with_pad.webp";
+
+import AzaelHeadshotHD from "../assets/arts_images/azael_headshot_hd.png";
+import AzaelReferenceSheetsHD from "../assets/arts_images/azael_reference_sheets_hd.png";
+import BiPrideIconHD from "../assets/arts_images/bi_pride_icon_hd.png";
+import CultOfTheGoatHD from "../assets/arts_images/cult_of_the_goat_hd.png";
+import DemonSlayerCosplayHD from "../assets/arts_images/demon_slayer_cosplay_hd.png";
+import GateToHellHD from "../assets/arts_images/gate_to_hell_hd.jpg";
+import GoatStickerHD from "../assets/arts_images/goat_sticker_hd.png";
+import GoofyIconHD from "../assets/arts_images/goofy_icon_hd.png";
+import HoodIconHD from "../assets/arts_images/hood_icon_hd.png";
+import MaidHD from "../assets/arts_images/maid_hd.png";
+import SillyGoatHD from "../assets/arts_images/silly_goat_hd.jpeg";
+import SparkleIconHD from "../assets/arts_images/sparkle_icon_hd.jpg";
+import TooCoolForSchoolHD from "../assets/arts_images/too_cool_for_school_hd.png";
+import RoomateWithPadHD from "../assets/arts_images/roomate_with_pad_hd.png";
+
+
+export const photoPageImage = [
     {
-    key: 0,
-    photoID: '1uPgf5YcEzsjJl4eIr-Pb4rfmJKVI6VMM'
+        key: 8,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: AzaelReferenceSheets,
+        imageHD: AzaelReferenceSheetsHD,
     },
     {
-    key: 1,
-    photoID: '1opxq1stCtCOZmf8MWVuGJxUbDCF3UP2V'
+        key: 13,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: RoomateWithPad,
+        imageHD: RoomateWithPadHD,
     },
     {
-    key: 2,
-    photoID: '1onOegnrOLuk4S-iCLPKP5VArykFlOohB'
+        key: 0,
+        artist: 'X | Twitter @NiixARTs',
+        link: 'https://x.com/NiixARTs',
+        imageName: GateToHell,
+        imageHD: GateToHellHD,
     },
     {
-    key: 3,
-    photoID: '1oawZeBeecMN-yIlkY0gSqM48flA_CBrH'
+        key: 1,
+        artist: 'X | Twitter @HirscheSly',
+        link: 'https://x.com/HirscheSly',
+        imageName: SparkleIcon,
+        imageHD: SparkleIconHD,
     },
     {
-    key: 4,
-    photoID: '1jKOnkAEgYfD9w9Uyzm3DwALGxF194lxj'
+        key: 2,
+        artist: 'X | Twitter @Pentaagonkaa',
+        link: 'https://x.com/Pentaagonkaa',
+        imageName: Maid,
+        imageHD: MaidHD,
     },
     {
-    key: 5,
-    photoID: '1im51e2oPrIaWBegLBKIQuBGLsfqymjfH'
+        key: 3,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: HoodIcon,
+        imageHD: HoodIconHD,
     },
     {
-    key: 6,
-    photoID: '1hzRKWwOn09dpHhTennwHL8SH_51htKwd'
+        key: 4,
+        artist: 'X | Twitter @Beelzeryon',
+        link: 'https://x.com/Beelzeryon',
+        imageName: DemonSlayerCosplay,
+        imageHD: DemonSlayerCosplayHD,
     },
     {
-    key: 7,
-    photoID: '1_PFfJrQvyoEvmEh9Dr5uYxhoQrgjZU_y'
+        key: 5,
+        artist: 'X | Twitter @NiixARTs',
+        link: 'https://x.com/NiixARTs',
+        imageName: TooCoolForSchool,
+        imageHD: TooCoolForSchoolHD,
     },
     {
-    key: 8,
-    photoID: '1UzgJh-FmUmSN5XZzkO2HQD4mA8_ThZfy'
+        key: 6,
+        artist: 'X | Twitter @foxynalie',
+        link: 'https://x.com/foxynalie',
+        imageName: CultOfTheGoat,
+        imageHD: CultOfTheGoatHD,
     },
     {
-    key: 9,
-    photoID: '1UqMSpufD0_Ul5zBRPldnolMwpk4NLXlQ'
+        key: 7,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: GoatSticker,
+        imageHD: GoatStickerHD,
     },
     {
-    key: 10,
-    photoID: '1UouqDtm61El37VGnMYrOtJK-UVTYDq4a'
+        key: 9,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: GoofyIcon,
+        imageHD: GoofyIconHD,
     },
     {
-    key: 11,
-    photoID: '1REGx6vV1eFx4pA73btgrRclKZs8RHZUh'
+        key: 10,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: BiPrideIcon,
+        imageHD: BiPrideIconHD,
     },
     {
-    key: 12,
-    photoID: '1KWi9yjvUSfNDcTtG5Zr0DErNQNblq3DQ'
+        key: 11,
+        artist: 'X | Twitter @CrowParadeArt',
+        link: 'https://x.com/CrowParadeArt',
+        imageName: SillyGoat,
+        imageHD: SillyGoatHD,
     },
     {
-    key: 13,
-    photoID: '1EXnRBmfKkkzshl-puK2e5c5-UYdUWXn8'
+        key: 12,
+        artist: 'X | Twitter @LoveIock_',
+        link: 'https://x.com/LoveIock_',
+        imageName: AzaelHeadshot,
+        imageHD: AzaelHeadshotHD,
     },
-    {
-    key: 14,
-    photoID: '1DBO-P9Zx9h8Z0nXFUSX1f4ND4Hss8eOm'
-    },
-    {
-    key: 15,
-    photoID: '1BLoQ_FFbbzYpO39iElVn0PpJkm3SYkAa'
-    },
-    {
-    key: 16,
-    photoID: '192s3lH8cO9SBrwTPxeSNEPB7MxI_-bO0'
-    },
-    {
-    key: 17,
-    photoID: '17dvxUFQjbGHz3GQ2qICfiX_SPs6bGyng'
-    },
-    {
-    key: 18,
-    photoID: '13ZxozcnYV3c2C4V_H_E_u9Ii0lrboPWj'
-    },
-    {
-    key: 19,
-    photoID: '1-38CBBZ1chAYMu7wqeyXERN3Tgd4Jz0E'
-    },
-    {
-    key: 20,
-    photoID: '1yzs6mXCt1Xuu5XzOs8hxYTJtaQn_eV1Y'
-    },
-    {
-    key: 21,
-    photoID: '1yWSk4FPdUt1Dsk9vmFT3bMXAjKrq-g-w'
-    },
-    {
-    key: 22,
-    photoID: '1pMHqRAszHLzMn0JegAoiT7FAQ_Mk0_-o'
-    },
-    {
-    key: 23,
-    photoID: '1lL1veusX6MoH59TsTLLpP4-jmO9WPm2D'
-    },
-    {
-    key: 24,
-    photoID: '1hJUturfqc2YYabpHXNaURoH96RQoTQqo'
-    },
-    {
-    key: 25,
-    photoID: '1gR3_wvJbTR_RuN_ji-boH8t60A5QiGh9'
-    },
-    {
-    key: 26,
-    photoID: '1fe6HUaCHnnw5SeX-ETV4feqiDwWMHIxg'
-    },
-    {
-    key: 27,
-    photoID: '1dWFtqJwDacgBZ2xoVdLDvZI2kxDFmyhT'
-    },
-    {
-    key: 28,
-    photoID: '1ZA0WijBdquw3Wg8sHsYt1-5xB2QwD-ha'
-    },
-    {
-    key: 29,
-    photoID: '1YqwMmdn9R_JcICqp5HTC44lcirQJPPrg'
-    },
-    {
-    key: 30,
-    photoID: '1XHa6HJb8FAVIaQKuYNEgB6cQR8HgU1PW'
-    },
-    {
-    key: 31,
-    photoID: '1T5cQ4BY_1B5eAm4ktNB6bkBNjemuMmag'
-    },
-    {
-    key: 32,
-    photoID: '1MwZidTBYr52zOiUtMce70jlLGqbGEjRT'
-    },
-    {
-    key: 33,
-    photoID: '1JYLeyBWgbhaVHyUZveq4vwVklJI23V30'
-    },
-    {
-    key: 34,
-    photoID: '1GKxSG_2bxWPvGr2BxV3Z1ruI5uPaWbH9'
-    },
-    {
-    key: 35,
-    photoID: '1G91XRY0oCc2FIIIIrimp5S2AORGjfz8K'
-    },
-    {
-    key: 36,
-    photoID: '1EklqO9M-Wmn4Sk-xD2ujkE_sGGqgG-kX'
-    },
-    {
-    key: 37,
-    photoID: '1BRvsOKnt_0vfOhrr_p-UL2P4hrTwKnmp'
-    },
-    {
-    key: 38,
-    photoID: '1yGC5by9KvHFpoN5bZ28ARxHhbVuLksn6'
-    },
-    {
-    key: 39,
-    photoID: '1wraMP0GmHKDawXj0BuY97Wigx_IMD0e0'
-    },
-    {
-    key: 40,
-    photoID: '1vaT5A-ElY7GMkOkl1Ze2PxQH1RZ0O1LN'
-    },
-    {
-    key: 41,
-    photoID: '1spa3MB19dp7GuRWgNOagc7A4_fknW_U4'
-    },
-    {
-    key: 42,
-    photoID: '1qEBKS2gQwVOz-kNFrgYolZVu5otyvJqJ'
-    },
-    {
-    key: 43,
-    photoID: '1nHx4HZt3vuyUvMaZF6G74JKgafggk4m4'
-    },
-    {
-    key: 44,
-    photoID: '1dIT_rArTr2pKw3hOP8vpkzlCzyNSUfnQ'
-    },
-    {
-    key: 45,
-    photoID: '1ZUu4dA-OWqTKQ9oIrEbPuA2_Nmsi8B-Q'
-    },
-    {
-    key: 46,
-    photoID: '1Y8qZBkFwBd4iu0gc2NNFBsAmSt3icrzU'
-    },
-    {
-    key: 47,
-    photoID: '1WlYoFCpQPsFlKBMsrlmR3n_tGWy1lwyI'
-    },
-    {
-    key: 48,
-    photoID: '1VcKkahwB4B0APiW1LStVBTaRC9fDx1U-'
-    },
-    {
-    key: 49,
-    photoID: '1M1oT5jHFI713zgdkSNJdNYp6M791PgKD'
-    },
-    {
-    key: 50,
-    photoID: '1IxLcBTOjVP5uKSzHJKqM28L7BsBEbN1Z'
-    },
-    {
-    key: 51,
-    photoID: '1BVX32l2749Xb6KIJkvZoLrVJh3Ej1BYp'
-    },
-    {
-    key: 52,
-    photoID: '14HMLWAYSuWvv0zqpxzKQu3ThgoH42Zas'
-    },
-    {
-    key: 53,
-    photoID: '10uv60UndUOiLbM-3INtPkcsz4OKeX7_X'
-    },
-    {
-    key: 54,
-    photoID: '1vvmRYkSn-P7tq22JC-Ym2uw3CTXaiLoE'
-    },
-    {
-    key: 55,
-    photoID: '1kIFSnVzVhN8P3K1u-IDWPw-zzWGPQNFg'
-    },
-    {
-    key: 56,
-    photoID: '1k9fttViTaOeBYd7bMiuChbvTRYXZJFFK'
-    },
-    {
-    key: 57,
-    photoID: '1af7lOb6-SrWwXKQ1qffEHTQfz-zzkxct'
-    },
-    {
-    key: 58,
-    photoID: '1Yinj13vkyC6KnTd_6N-jtyo4qc3hZyBD'
-    },
-    {
-    key: 59,
-    photoID: '1CpDSQLBiobZ1hCLQ6a409nrwCa5d9LRT'
-    },
-    {
-    key: 60,
-    photoID: '1-QAIc5cbKk80HRlUAIbSeh7ZeEzHXluN'
-    },
-    ];
-    
+];

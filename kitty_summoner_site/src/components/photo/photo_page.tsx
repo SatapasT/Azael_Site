@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HomePageItem } from "../../constants/photo_page_item";
+import { photoPageImage } from "../../constants/photo_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 import LoadingSpinner from "../loading_spinner"
 
@@ -12,10 +12,10 @@ const PhotoPage: React.FC = () => {
   const [enlargeImageVisible, setEnlargeImageVisible] = useState(false);
   const [selectedEnlargedImage, setSelectedEnlargedImage] = useState('');
 
-  const totalPage = Math.ceil(HomePageItem.length / itemsPerPage);
+  const totalPage = Math.ceil(photoPageImage.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = HomePageItem.slice(startIndex, startIndex + itemsPerPage);
+  const currentItems = photoPageImage.slice(startIndex, startIndex + itemsPerPage);
 
   const nextPage = () => {
     setCurrentPage(currentPage + 1);
@@ -48,7 +48,7 @@ const PhotoPage: React.FC = () => {
     const imagePromises = currentItems.map(item => {
       return new Promise(resolve => {
         const img = new Image();
-        img.src = `https://drive.google.com/thumbnail?id=${item.photoID}&sz=w1000`;
+        img.src = item.imageName;
         img.onload = resolve;
         img.onerror = resolve;
       });
@@ -67,9 +67,9 @@ const PhotoPage: React.FC = () => {
     });
   }, [currentPage, itemsPerPage, currentItems]);
 
-  const selectEnlargeImage = (key: string) => {
+  const selectEnlargeImage = (imageHD: string) => {
     setEnlargeImageVisible(true);
-    setSelectedEnlargedImage(`https://drive.google.com/thumbnail?id=${key}&sz=w1000`);
+    setSelectedEnlargedImage(imageHD);
   };
 
   const closeEnlargeImage = () => {
@@ -104,20 +104,29 @@ const PhotoPage: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
           {currentItems.map((item) => (
-            <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400">
+            <div key={item.key} className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center">
               {pageLoading && !loadedItems.has(item.key) ? (
                 <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
                   <LoadingSpinner />
                 </div>
               ) : (
-                <a href='javascript:void(0)'>
-                  <img
-                    alt="gallery"
-                    className="w-full h-full object-contain rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:z-10 border-1 border-slate-700"
-                    src={`https://drive.google.com/thumbnail?id=${item.photoID}&sz=w1000`}
-                    onClick={() => selectEnlargeImage(item.photoID)}
-                  />
-                </a>
+                <div className="flex flex-col items-center justify-center">
+                  <div className="flex items-center justify-center h-full">
+                    <a href='javascript:void(0)'>
+                      <img
+                        alt="gallery"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+                        src={item.imageName}
+                        onClick={() => selectEnlargeImage(item.imageHD)}
+                      />
+                    </a>
+                  </div>
+                  <div className="text-center font-bold mt-2 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                      {item.artist}
+                    </a>
+                  </div>
+                </div>
               )}
             </div>
           ))}
@@ -151,7 +160,6 @@ const PhotoPage: React.FC = () => {
                 ${index < currentPage - 3 ? 'hidden' : ''}
                 `}
                 onClick={() => pageSelection(index + 1)}
-                disabled={currentPage === index + 1}
               >
                 {index + 1}
               </button>
@@ -175,8 +183,11 @@ const PhotoPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='py-4'></div>
-      <EnlargeImageModal image={selectedEnlargedImage} isVisible={enlargeImageVisible} onClose={closeEnlargeImage} />
+      <div className='py-'></div>
+      <EnlargeImageModal 
+      image={selectedEnlargedImage} 
+      isVisible={enlargeImageVisible} 
+      onClose={closeEnlargeImage} />
     </div>
   );
 };

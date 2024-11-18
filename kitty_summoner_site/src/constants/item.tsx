@@ -1,11 +1,9 @@
 export const Items = [
-/** 
 {
     id: "photo",
     title: "Photos",
     url: "#photo",
 },
-*/
 {
     id: "art",
     title: "Arts",

@@ -88,7 +88,7 @@ const FursonaPage: React.FC = () => {
             <img
               src={VRchat_Model_2}
               title='VR model 2'
-              className='w-auto h-auto max-w-xs md:max-w-md'
+              className='w-auto h-auto max-w-xs md:max-w-md hidden lg:block'
             />
           </div>
           <div className="flex flex-col items-center justify-center pb-5 w-auto">
