@@ -46,7 +46,7 @@ const GamingTagPage: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 p-4 h-1/2 py-8">
           {OtherGames.map((game, index) => (
-            <div className="p-2 box-border border-2 rounded-lg border-orange-600 bg-slate-900 shadow-[0_0_2px_#fff,inset_0_0_5px_#fff,0_0_8px_#ffa500,0_0_15px_#ffa500,0_0_30px_#ff8c00]">
+            <div className="p-4 box-border border-2 rounded-lg border-orange-600 bg-slate-900 shadow-[0_0_2px_#fff,inset_0_0_5px_#fff,0_0_8px_#ffa500,0_0_15px_#ffa500,0_0_30px_#ff8c00]">
               <GameCard key={index} {...game} />
             </div>
           ))}
