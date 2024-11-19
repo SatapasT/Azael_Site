@@ -54,9 +54,7 @@ const PhotoPage: React.FC = () => {
   return (
     <div className="container mx-auto px-5 py-1 lg:px-32 lg:pt-2 min-h-screen flex flex-col">
       <div className="flex flex-col items-center justify-start mb-4 flex-grow pb-8">
-        <div className="flex">
-          <ImageAmountSelector setItemsPerPage={setItemsPerPage}/>
-        </div>
+        <ImageAmountSelector setItemsPerPage={setItemsPerPage}/>
         <GalleryLoader
         currentItems={currentItems}
         pageLoading={pageLoading}
@@ -69,10 +67,11 @@ const PhotoPage: React.FC = () => {
           currentPage={currentPage}
           setPageChange={setCurrentPage}
         />
-      <EnlargeImageModal 
-      image={selectedEnlargedImage} 
-      isVisible={enlargeImageVisible} 
-      onClose={closeEnlargeImage} />
+        <EnlargeImageModal 
+        image={selectedEnlargedImage} 
+        isVisible={enlargeImageVisible} 
+        onClose={closeEnlargeImage} 
+        />
     </div>
   );
 };
