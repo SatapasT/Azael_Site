@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArtPageItem } from "../../constants/art_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
-import LoadingSpinner from "../loading_spinner"
+import LoadingSpinner from "../../assets/component/loading_spinner"
 
 const ArtPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);

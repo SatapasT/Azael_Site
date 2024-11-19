@@ -45,6 +45,48 @@ import November2024_20HD from "../assets/photos_images/november_2024_20.jpg";
 
 export const photoPageImage = [
     {
+        key: 14,
+        tag: 'November 2024',
+        imageName: November2024_15,
+        imageHD: November2024_15HD,
+    },
+    {
+        key: 15,
+        tag: 'November 2024',
+        imageName: November2024_16,
+        imageHD: November2024_16HD,
+    },
+    {
+        key: 16,
+        tag: 'November 2024',
+        imageName: November2024_17,
+        imageHD: November2024_17HD,
+    },
+    {
+        key: 17,
+        tag: 'November 2024',
+        imageName: November2024_18,
+        imageHD: November2024_18HD,
+    },
+    {
+        key: 18,
+        tag: 'November 2024',
+        imageName: November2024_19,
+        imageHD: November2024_19HD,
+    },
+    {
+        key: 13,
+        tag: 'November 2024',
+        imageName: November2024_14,
+        imageHD: November2024_14HD,
+    },
+    {
+        key: 19,
+        tag: 'November 2024',
+        imageName: November2024_20,
+        imageHD: November2024_20HD,
+    },
+    {
         key: 0,
         tag: 'November 2024',
         imageName: November2024_1,
@@ -121,48 +163,6 @@ export const photoPageImage = [
         tag: 'November 2024',
         imageName: November2024_13,
         imageHD: November2024_13HD,
-    },
-    {
-        key: 13,
-        tag: 'November 2024',
-        imageName: November2024_14,
-        imageHD: November2024_14HD,
-    },
-    {
-        key: 14,
-        tag: 'November 2024',
-        imageName: November2024_15,
-        imageHD: November2024_15HD,
-    },
-    {
-        key: 15,
-        tag: 'November 2024',
-        imageName: November2024_16,
-        imageHD: November2024_16HD,
-    },
-    {
-        key: 16,
-        tag: 'November 2024',
-        imageName: November2024_17,
-        imageHD: November2024_17HD,
-    },
-    {
-        key: 17,
-        tag: 'November 2024',
-        imageName: November2024_18,
-        imageHD: November2024_18HD,
-    },
-    {
-        key: 18,
-        tag: 'November 2024',
-        imageName: November2024_19,
-        imageHD: November2024_19HD,
-    },
-    {
-        key: 19,
-        tag: 'November 2024',
-        imageName: November2024_20,
-        imageHD: November2024_20HD,
     },
     
 ];

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { photoPageImage } from "../../constants/photo_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
-import LoadingSpinner from "../loading_spinner"
+import LoadingSpinner from "../../assets/component/loading_spinner"
+import PageNavigator from "../image navigation/page_navigator";
 
 
 const PhotoPage: React.FC = () => {
@@ -132,53 +133,11 @@ const PhotoPage: React.FC = () => {
       </div>
       <div className="fixed bottom-0 left-0 right-0 py-4">
         <div className="flex flex-col items-center justify-center">
-          <div className="flex space-x-2 opacity-95">
-            <button
-              className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-              ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
-              onClick={firstPage}
-              disabled={currentPage === 1}
-            >
-              First
-            </button>
-            <button
-              className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-l 
-              ${currentPage === 1 ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r ' : ''}`}
-              onClick={previousPage}
-              disabled={currentPage === 1}
-            >
-              Prev
-            </button>
-            {[...Array(totalPage)].map((_, index) => (
-              <button
-                key={index}
-                className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-                ${currentPage === index + 1 ? 'bg-gray-500' : 'bg-white'}
-                ${index > currentPage + 1 ? 'hidden' : ''}
-                ${index < currentPage - 3 ? 'hidden' : ''}
-                `}
-                onClick={() => pageSelection(index + 1)}
-              >
-                {index + 1}
-              </button>
-            ))}
-            <button
-              className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-              ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
-              onClick={nextPage}
-              disabled={currentPage === totalPage}
-            >
-              Next
-            </button>
-            <button
-              className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r 
-              ${currentPage === totalPage ? 'bg-gray-900 hover:bg-gray-900 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-r' : ''}`}
-              onClick={lastPage}
-              disabled={currentPage === totalPage}
-            >
-              Last
-            </button>
-          </div>
+        <PageNavigator
+          totalPage={totalPage}
+          currentPage={currentPage}
+          setPageChange={setCurrentPage}
+        />
         </div>
       </div>
       <div className='py-'></div>
