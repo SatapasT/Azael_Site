@@ -1,130 +1,168 @@
-import AzaelHeadshot from "../assets/arts_images/azael_headshot.webp";
-import AzaelReferenceSheets from "../assets/arts_images/azael_reference_sheets.webp";
-import BiPrideIcon from "../assets/arts_images/bi_pride_icon.webp";
-import CultOfTheGoat from "../assets/arts_images/cult_of_the_goat.webp";
-import DemonSlayerCosplay from "../assets/arts_images/demon_slayer_cosplay.webp";
-import GateToHell from "../assets/arts_images/gate_to_hell.webp";
-import GoatSticker from "../assets/arts_images/goat_sticker.webp";
-import GoofyIcon from "../assets/arts_images/goofy_icon.webp";
-import HoodIcon from "../assets/arts_images/hood_icon.webp";
-import Maid from "../assets/arts_images/maid.webp";
-import SillyGoat from "../assets/arts_images/silly_goat.webp";
-import SparkleIcon from "../assets/arts_images/sparkle_icon.webp";
-import TooCoolForSchool from "../assets/arts_images/too_cool_for_school.webp";
-import RoomateWithPad from "../assets/arts_images/roomate_with_pad.webp";
-import AzaelHeadshotHD from "../assets/arts_images/azael_headshot_hd.png";
-import AzaelReferenceSheetsHD from "../assets/arts_images/azael_reference_sheets_hd.png";
-import BiPrideIconHD from "../assets/arts_images/bi_pride_icon_hd.png";
-import CultOfTheGoatHD from "../assets/arts_images/cult_of_the_goat_hd.png";
-import DemonSlayerCosplayHD from "../assets/arts_images/demon_slayer_cosplay_hd.png";
-import GateToHellHD from "../assets/arts_images/gate_to_hell_hd.jpg";
-import GoatStickerHD from "../assets/arts_images/goat_sticker_hd.png";
-import GoofyIconHD from "../assets/arts_images/goofy_icon_hd.png";
-import HoodIconHD from "../assets/arts_images/hood_icon_hd.png";
-import MaidHD from "../assets/arts_images/maid_hd.png";
-import SillyGoatHD from "../assets/arts_images/silly_goat_hd.jpeg";
-import SparkleIconHD from "../assets/arts_images/sparkle_icon_hd.jpg";
-import TooCoolForSchoolHD from "../assets/arts_images/too_cool_for_school_hd.png";
-import RoomateWithPadHD from "../assets/arts_images/roomate_with_pad_hd.png";
+import November2024_1 from "../assets/photos_images/november_2024_1.webp";
+import November2024_2 from "../assets/photos_images/november_2024_2.webp";
+import November2024_3 from "../assets/photos_images/november_2024_3.webp";
+import November2024_4 from "../assets/photos_images/november_2024_4.webp";
+import November2024_5 from "../assets/photos_images/november_2024_5.webp";
+import November2024_6 from "../assets/photos_images/november_2024_6.webp";
+import November2024_7 from "../assets/photos_images/november_2024_7.webp";
+import November2024_8 from "../assets/photos_images/november_2024_8.webp";
+import November2024_9 from "../assets/photos_images/november_2024_9.webp";
+import November2024_10 from "../assets/photos_images/november_2024_10.webp";
+import November2024_11 from "../assets/photos_images/november_2024_11.webp";
+import November2024_12 from "../assets/photos_images/november_2024_12.webp";
+import November2024_13 from "../assets/photos_images/november_2024_13.webp";
+import November2024_14 from "../assets/photos_images/november_2024_14.webp";
+import November2024_15 from "../assets/photos_images/november_2024_15.webp";
+import November2024_16 from "../assets/photos_images/november_2024_16.webp";
+import November2024_17 from "../assets/photos_images/november_2024_17.webp";
+import November2024_18 from "../assets/photos_images/november_2024_18.webp";
+import November2024_19 from "../assets/photos_images/november_2024_19.webp";
+import November2024_20 from "../assets/photos_images/november_2024_20.webp";
+
+import November2024_1HD from "../assets/photos_images/november_2024_1.jpg";
+import November2024_2HD from "../assets/photos_images/november_2024_2.jpg";
+import November2024_3HD from "../assets/photos_images/november_2024_3.jpg";
+import November2024_4HD from "../assets/photos_images/november_2024_4.jpg";
+import November2024_5HD from "../assets/photos_images/november_2024_5.jpg";
+import November2024_6HD from "../assets/photos_images/november_2024_6.jpg";
+import November2024_7HD from "../assets/photos_images/november_2024_7.jpg";
+import November2024_8HD from "../assets/photos_images/november_2024_8.jpg";
+import November2024_9HD from "../assets/photos_images/november_2024_9.jpg";
+import November2024_10HD from "../assets/photos_images/november_2024_10.jpg";
+import November2024_11HD from "../assets/photos_images/november_2024_11.jpg";
+import November2024_12HD from "../assets/photos_images/november_2024_12.jpg";
+import November2024_13HD from "../assets/photos_images/november_2024_13.jpg";
+import November2024_14HD from "../assets/photos_images/november_2024_14.jpg";
+import November2024_15HD from "../assets/photos_images/november_2024_15.jpg";
+import November2024_16HD from "../assets/photos_images/november_2024_16.jpg";
+import November2024_17HD from "../assets/photos_images/november_2024_17.jpg";
+import November2024_18HD from "../assets/photos_images/november_2024_18.jpg";
+import November2024_19HD from "../assets/photos_images/november_2024_19.jpg";
+import November2024_20HD from "../assets/photos_images/november_2024_20.jpg";
+
+
 
 
 export const photoPageImage = [
     {
-        key: 8,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: AzaelReferenceSheets,
-        imageHD: AzaelReferenceSheetsHD,
-    },
-    {
-        key: 13,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: RoomateWithPad,
-        imageHD: RoomateWithPadHD,
-    },
-    {
         key: 0,
-        artist: 'X | Twitter @NiixARTs',
-        link: 'https://x.com/NiixARTs',
-        imageName: GateToHell,
-        imageHD: GateToHellHD,
+        tag: 'November 2024',
+        imageName: November2024_1,
+        imageHD: November2024_1HD,
     },
     {
         key: 1,
-        artist: 'X | Twitter @HirscheSly',
-        link: 'https://x.com/HirscheSly',
-        imageName: SparkleIcon,
-        imageHD: SparkleIconHD,
+        tag: 'November 2024',
+        imageName: November2024_2,
+        imageHD: November2024_2HD,
     },
     {
         key: 2,
-        artist: 'X | Twitter @Pentaagonkaa',
-        link: 'https://x.com/Pentaagonkaa',
-        imageName: Maid,
-        imageHD: MaidHD,
+        tag: 'November 2024',
+        imageName: November2024_3,
+        imageHD: November2024_3HD,
     },
     {
         key: 3,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: HoodIcon,
-        imageHD: HoodIconHD,
+        tag: 'November 2024',
+        imageName: November2024_4,
+        imageHD: November2024_4HD,
     },
     {
         key: 4,
-        artist: 'X | Twitter @Beelzeryon',
-        link: 'https://x.com/Beelzeryon',
-        imageName: DemonSlayerCosplay,
-        imageHD: DemonSlayerCosplayHD,
+        tag: 'November 2024',
+        imageName: November2024_5,
+        imageHD: November2024_5HD,
     },
     {
         key: 5,
-        artist: 'X | Twitter @NiixARTs',
-        link: 'https://x.com/NiixARTs',
-        imageName: TooCoolForSchool,
-        imageHD: TooCoolForSchoolHD,
+        tag: 'November 2024',
+        imageName: November2024_6,
+        imageHD: November2024_6HD,
     },
     {
         key: 6,
-        artist: 'X | Twitter @foxynalie',
-        link: 'https://x.com/foxynalie',
-        imageName: CultOfTheGoat,
-        imageHD: CultOfTheGoatHD,
+        tag: 'November 2024',
+        imageName: November2024_7,
+        imageHD: November2024_7HD,
     },
     {
         key: 7,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: GoatSticker,
-        imageHD: GoatStickerHD,
+        tag: 'November 2024',
+        imageName: November2024_8,
+        imageHD: November2024_8HD,
+    },
+    {
+        key: 8,
+        tag: 'November 2024',
+        imageName: November2024_9,
+        imageHD: November2024_9HD,
     },
     {
         key: 9,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: GoofyIcon,
-        imageHD: GoofyIconHD,
+        tag: 'November 2024',
+        imageName: November2024_10,
+        imageHD: November2024_10HD,
     },
     {
         key: 10,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: BiPrideIcon,
-        imageHD: BiPrideIconHD,
+        tag: 'November 2024',
+        imageName: November2024_11,
+        imageHD: November2024_11HD,
     },
     {
         key: 11,
-        artist: 'X | Twitter @CrowParadeArt',
-        link: 'https://x.com/CrowParadeArt',
-        imageName: SillyGoat,
-        imageHD: SillyGoatHD,
+        tag: 'November 2024',
+        imageName: November2024_12,
+        imageHD: November2024_12HD,
     },
     {
         key: 12,
-        artist: 'X | Twitter @LoveIock_',
-        link: 'https://x.com/LoveIock_',
-        imageName: AzaelHeadshot,
-        imageHD: AzaelHeadshotHD,
+        tag: 'November 2024',
+        imageName: November2024_13,
+        imageHD: November2024_13HD,
     },
+    {
+        key: 13,
+        tag: 'November 2024',
+        imageName: November2024_14,
+        imageHD: November2024_14HD,
+    },
+    {
+        key: 14,
+        tag: 'November 2024',
+        imageName: November2024_15,
+        imageHD: November2024_15HD,
+    },
+    {
+        key: 15,
+        tag: 'November 2024',
+        imageName: November2024_16,
+        imageHD: November2024_16HD,
+    },
+    {
+        key: 16,
+        tag: 'November 2024',
+        imageName: November2024_17,
+        imageHD: November2024_17HD,
+    },
+    {
+        key: 17,
+        tag: 'November 2024',
+        imageName: November2024_18,
+        imageHD: November2024_18HD,
+    },
+    {
+        key: 18,
+        tag: 'November 2024',
+        imageName: November2024_19,
+        imageHD: November2024_19HD,
+    },
+    {
+        key: 19,
+        tag: 'November 2024',
+        imageName: November2024_20,
+        imageHD: November2024_20HD,
+    },
+    
 ];
