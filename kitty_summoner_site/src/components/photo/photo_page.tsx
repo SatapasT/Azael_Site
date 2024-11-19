@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { photoPageImage } from "../../constants/photo_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 import LoadingSpinner from "../../assets/component/loading_spinner"
-import PageNavigator from "../image navigation/page_navigator";
-import ImageAmountSelector from "../image navigation/image_per_page";
+import PageNavigator from "../image_navigation/page_navigator";
+import ImageAmountSelector from "../image_navigation/image_per_page";
 
 
 
@@ -19,32 +19,6 @@ const PhotoPage: React.FC = () => {
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentItems = photoPageImage.slice(startIndex, startIndex + itemsPerPage);
-
-  const nextPage = () => {
-    setCurrentPage(currentPage + 1);
-  };
-
-  const previousPage = () => {
-    setCurrentPage(currentPage - 1);
-  };
-
-  const firstPage = () => {
-    setCurrentPage(1);
-  };
-
-  const lastPage = () => {
-    setCurrentPage(totalPage);
-  };
-
-  const pageSelection = (key: number) => {
-    setCurrentPage(key);
-  };
-
-  const changeItemsPerPage = (pages: number) => {
-    const newCurrentPage = Math.floor(((currentPage - 1) * itemsPerPage) / pages) + 1;
-    setItemsPerPage(pages);
-    setCurrentPage(newCurrentPage);
-  };
 
   useEffect(() => {
     setPageLoading(true);
@@ -82,10 +56,8 @@ const PhotoPage: React.FC = () => {
   return (
     <div className="container mx-auto px-5 py-1 lg:px-32 lg:pt-2 min-h-screen flex flex-col">
       <div className="flex flex-col items-center justify-start mb-4 flex-grow">
-        <div className="flex items-center space-x-2 py-2">
-          <ImageAmountSelector 
-          itemsPerPage={itemsPerPage} 
-          setItemsPerPage={setItemsPerPage}/>
+        <div className="flex">
+          <ImageAmountSelector setItemsPerPage={setItemsPerPage}/>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
           {currentItems.map((item) => (
@@ -115,15 +87,11 @@ const PhotoPage: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 right-0 py-4">
-        <div className="flex flex-col items-center justify-center">
         <PageNavigator
           totalPage={totalPage}
           currentPage={currentPage}
           setPageChange={setCurrentPage}
         />
-        </div>
-      </div>
       <div className='py-'></div>
       <EnlargeImageModal 
       image={selectedEnlargedImage} 

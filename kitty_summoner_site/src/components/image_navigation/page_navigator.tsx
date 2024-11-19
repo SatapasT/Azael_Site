@@ -28,6 +28,8 @@ const PageNavigator: React.FC<PageNavigatorProps> = ({ totalPage, currentPage, s
     };
 
     return (
+        <div className="fixed bottom-0 left-0 right-0 py-4">
+        <div className="flex flex-col items-center justify-center">
         <div className="flex space-x-2 opacity-95">
 
             <button
@@ -79,6 +81,8 @@ const PageNavigator: React.FC<PageNavigatorProps> = ({ totalPage, currentPage, s
             >
                 Last
             </button>
+        </div>
+        </div>
         </div>
     );
 };
