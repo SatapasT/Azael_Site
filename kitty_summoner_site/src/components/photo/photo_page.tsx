@@ -3,6 +3,8 @@ import { photoPageImage } from "../../constants/photo_page_item";
 import EnlargeImageModal from "../modal/enlarge_image_modal";
 import LoadingSpinner from "../../assets/component/loading_spinner"
 import PageNavigator from "../image navigation/page_navigator";
+import ImageAmountSelector from "../image navigation/image_per_page";
+
 
 
 const PhotoPage: React.FC = () => {
@@ -81,27 +83,9 @@ const PhotoPage: React.FC = () => {
     <div className="container mx-auto px-5 py-1 lg:px-32 lg:pt-2 min-h-screen flex flex-col">
       <div className="flex flex-col items-center justify-start mb-4 flex-grow">
         <div className="flex items-center space-x-2 py-2">
-          <div className="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
-            Images Per Page :
-          </div>
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemsPerPage(3)}
-          >
-            3
-          </button>
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemsPerPage(9)}
-          >
-            9
-          </button>
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2"
-            onClick={() => changeItemsPerPage(27)}
-          >
-            27
-          </button>
+          <ImageAmountSelector 
+          itemsPerPage={itemsPerPage} 
+          setItemsPerPage={setItemsPerPage}/>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
           {currentItems.map((item) => (

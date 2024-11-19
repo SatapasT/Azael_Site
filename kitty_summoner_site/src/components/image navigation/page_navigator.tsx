@@ -32,7 +32,7 @@ const PageNavigator: React.FC<PageNavigatorProps> = ({ totalPage, currentPage, s
 
             <button
                 className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded 
-          ${currentPage === 1 && "bg-gray-900"}`}
+                ${currentPage === 1 && "bg-gray-900"}`}
                 onClick={firstPage}
                 disabled={currentPage === 1}
             >
@@ -52,11 +52,10 @@ const PageNavigator: React.FC<PageNavigatorProps> = ({ totalPage, currentPage, s
                 <button
                     key={index}
                     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded 
-            ${currentPage === index + 1 && "bg-gray-500"}
-            ${index > currentPage + 1 ? 'hidden' : ""}
-            ${index < currentPage - 3 ? 'hidden' : ""}
-            `}
-
+                    ${currentPage === index + 1 && "bg-gray-500"}
+                    ${index > currentPage + 1 ? 'hidden' : ""}
+                    ${index < currentPage - 3 ? 'hidden' : ""}
+                    `}
                     onClick={() => pageSelection(index + 1)}
                 >
                     {index + 1}
@@ -65,15 +64,16 @@ const PageNavigator: React.FC<PageNavigatorProps> = ({ totalPage, currentPage, s
 
             <button
                 className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded 
-          ${currentPage === totalPage && "bg-gray-900"}`}
+                ${currentPage === totalPage && "bg-gray-900"}`}
                 onClick={nextPage}
                 disabled={currentPage === totalPage}
             >
                 Next
             </button>
+            
             <button
                 className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 sm:py-2 sm:px-4 rounded 
-          ${currentPage === totalPage && "bg-gray-900"}`}
+                ${currentPage === totalPage && "bg-gray-900"}`}
                 onClick={lastPage}
                 disabled={currentPage === totalPage}
             >
