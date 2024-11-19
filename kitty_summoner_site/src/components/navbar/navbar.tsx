@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import AzaelHeadshotImage from '../../assets/images/azael_headshot.webp';
-import { Items } from '../../constants/item';
+import { PageItems } from '../../constants/page_item';
 import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
                 </a>
                 <nav className='hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-red-900 lg:static lg:flex lg:mx-auto lg:bg-transparent'>
                     <div className='relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row'>
-                        {Items.map((item) => (
+                        {PageItems.map((item) => (
                             <a
                                 key={item.id}
                                 href={item.url}

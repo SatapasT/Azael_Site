@@ -1,4 +1,4 @@
-export const Items = [
+export const PageItems = [
 {
     id: "photo",
     title: "Photos",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Items } from '../../constants/item';
+import { PageItems } from '../../constants/page_item';
 import xIcon from '../../assets/images/x_icon.webp';
 import tiktokIcon from '../../assets/images/tiktok_icon.webp';
 import instagarmIcon from '../../assets/images/instagram_icon.webp';
@@ -31,7 +31,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => 
                     </a>
                 </div>
                 <div className='flex flex-col items-center w-full flex-grow'>
-                    {Items.map((item) => (
+                    {PageItems.map((item) => (
                         <a
                             key={item.id}
                             href={item.url}

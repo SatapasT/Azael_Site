@@ -60,7 +60,7 @@ const PhotoPage: React.FC = () => {
         pageLoading={pageLoading}
         loadedItems={loadedItems}
         selectEnlargeImage={selectEnlargeImage}
-      />
+        />
       </div>
         <PageNavigator
           totalPage={totalPage}
