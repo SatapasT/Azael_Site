@@ -14,12 +14,7 @@ interface GalleryLoaderProps {
     selectEnlargeImage: (imageHD: string) => void;
 }
 
-const GalleryLoader: React.FC<GalleryLoaderProps> = ({
-    currentItems,
-    pageLoading,
-    loadedItems,
-    selectEnlargeImage,
-}) => {
+const GalleryLoader: React.FC<GalleryLoaderProps> = ({currentItems, pageLoading, loadedItems, selectEnlargeImage}) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
             {currentItems.map((item) => (

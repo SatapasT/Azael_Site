@@ -59,8 +59,6 @@ const HomePage: React.FC = () => {
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

@@ -36,7 +36,7 @@ const GamingTagPage: React.FC = () => {
           {MainGames.map((game, index) => (
             <div
               key={index}
-              className="p-2 box-border border-2 rounded-lg border-red-600 bg-slate-800 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#8b0000,0_0_15px_#8b0000,0_0_30px_#8b0000] max-h-[300px] sm:max-h-[400px]"
+              className="p-2 box-border border-2 rounded-lg border-red-600 bg-slate-800 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#8b0000,0_0_15px_#8b0000,0_0_30px_#8b0000] max-h-[500px]"
             >
               <GameCard {...game} />
             </div>
@@ -49,7 +49,7 @@ const GamingTagPage: React.FC = () => {
           {OtherGames.map((game, index) => (
             <div
               key={index}
-              className="p-4 box-border border-2 rounded-lg border-orange-600 bg-slate-900 shadow-[0_0_2px_#fff,inset_0_0_5px_#fff,0_0_8px_#ffa500,0_0_15px_#ffa500,0_0_30px_#ff8c00] max-h-[250px] sm:max-h-[350px]"
+              className="p-4 box-border border-2 rounded-lg border-orange-600 bg-slate-900 shadow-[0_0_2px_#fff,inset_0_0_5px_#fff,0_0_8px_#ffa500,0_0_15px_#ffa500,0_0_30px_#ff8c00] max-h-[500px]"
             >
               <GameCard {...game} />
             </div>
