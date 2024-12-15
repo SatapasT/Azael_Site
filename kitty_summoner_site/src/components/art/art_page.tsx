@@ -33,7 +33,7 @@ const ArtPage: React.FC = () => {
       setPageLoading(false);
       setLoadedItems((prevItems) => {
         const newItems = new Set(prevItems);
-        currentItems.forEach(item => newItems.add(item.key));
+        currentItems.forEach(item => newItems.add(item));
         return newItems;
       });
     }).catch(error => {

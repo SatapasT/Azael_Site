@@ -3,7 +3,6 @@ import LoadingSpinner from "../../assets/component/loading_spinner";
 
 interface GalleryLoaderProps {
     currentItems: {
-        key: number;
         imageName: string;
         imageHD: string;
         tag: string;
@@ -19,10 +18,9 @@ const GalleryLoader: React.FC<GalleryLoaderProps> = ({currentItems, pageLoading,
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
             {currentItems.map((item) => (
                 <div
-                    key={item.key}
                     className="relative overflow-hidden p-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 flex items-center justify-center"
                 >
-                    {pageLoading && !loadedItems.has(item.key) ? (
+                    {pageLoading && !loadedItems.has(item) ? (
                         <div className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded shadow mt-2">
                             <LoadingSpinner />
                         </div>
