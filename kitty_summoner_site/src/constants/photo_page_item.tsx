@@ -29,7 +29,35 @@ import December2024Newcastle_8 from "../assets/photos_images/december_2024_newca
 import December2024Newcastle_9 from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_9.webp";
 import December2024Newcastle_10 from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_10.webp";
 import December2024Newcastle_11 from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_11.webp";
-
+import December2024Sunderland_1 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_1.webp";
+import December2024Sunderland_2 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_2.webp";
+import December2024Sunderland_3 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_3.webp";
+import December2024Sunderland_4 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_4.webp";
+import December2024Sunderland_5 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_5.webp";
+import December2024Sunderland_6 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_6.webp";
+import December2024Sunderland_7 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_7.webp";
+import December2024Sunderland_8 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_8.webp";
+import December2024Sunderland_9 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_9.webp";
+import December2024Sunderland_10 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_10.webp";
+import December2024Sunderland_11 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_11.webp";
+import December2024Sunderland_12 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_12.webp";
+import December2024Sunderland_13 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_13.webp";
+import December2024Sunderland_14 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_14.webp";
+import December2024Sunderland_15 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_15.webp";
+import December2024Sunderland_16 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_16.webp";
+import December2024Sunderland_17 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_17.webp";
+import December2024Sunderland_18 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_18.webp";
+import December2024Sunderland_19 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_19.webp";
+import December2024Sunderland_20 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_20.webp";
+import December2024Sunderland_21 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_21.webp";
+import December2024Sunderland_22 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_22.webp";
+import December2024Sunderland_23 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_23.webp";
+import December2024Sunderland_24 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_24.webp";
+import December2024Sunderland_25 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_25.webp";
+import December2024Sunderland_26 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_26.webp";
+import December2024Sunderland_27 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_27.webp";
+import December2024Sunderland_28 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_28.webp";
+import December2024Sunderland_29 from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_29.webp";
 
 
 import November2024_1HD from "../assets/photos_images/november_2024/november_2024_1.jpg";
@@ -63,8 +91,212 @@ import December2024Newcastle_8HD from "../assets/photos_images/december_2024_new
 import December2024Newcastle_9HD from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_9.jpg";
 import December2024Newcastle_10HD from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_10.jpg";
 import December2024Newcastle_11HD from "../assets/photos_images/december_2024_newcastle/december_2024_newcastle_11.jpg";
+import December2024Sunderland_1HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_1.jpg";
+import December2024Sunderland_2HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_2.jpg";
+import December2024Sunderland_3HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_3.jpg";
+import December2024Sunderland_4HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_4.jpg";
+import December2024Sunderland_5HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_5.jpg";
+import December2024Sunderland_6HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_6.jpg";
+import December2024Sunderland_7HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_7.jpg";
+import December2024Sunderland_8HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_8.jpg";
+import December2024Sunderland_9HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_9.jpg";
+import December2024Sunderland_10HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_10.jpg";
+import December2024Sunderland_11HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_11.jpg";
+import December2024Sunderland_12HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_12.jpg";
+import December2024Sunderland_13HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_13.jpg";
+import December2024Sunderland_14HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_14.jpg";
+import December2024Sunderland_15HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_15.jpg";
+import December2024Sunderland_16HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_16.jpg";
+import December2024Sunderland_17HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_17.jpg";
+import December2024Sunderland_18HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_18.jpg";
+import December2024Sunderland_19HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_19.jpg";
+import December2024Sunderland_20HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_20.jpg";
+import December2024Sunderland_21HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_21.jpg";
+import December2024Sunderland_22HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_22.jpg";
+import December2024Sunderland_23HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_23.jpg";
+import December2024Sunderland_24HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_24.jpg";
+import December2024Sunderland_25HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_25.jpg";
+import December2024Sunderland_26HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_26.jpg";
+import December2024Sunderland_27HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_27.jpg";
+import December2024Sunderland_28HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_28.jpg";
+import December2024Sunderland_29HD from "../assets/photos_images/december_2024_sunderland/december_2024_sunderland_29.jpg";
+
 
 export const photoPageImage = [
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_25,
+        imageHD: December2024Sunderland_25HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_23,
+        imageHD: December2024Sunderland_23HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_24,
+        imageHD: December2024Sunderland_24HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_22,
+        imageHD: December2024Sunderland_22HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_26,
+        imageHD: December2024Sunderland_26HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_27,
+        imageHD: December2024Sunderland_27HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_28,
+        imageHD: December2024Sunderland_28HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_29,
+        imageHD: December2024Sunderland_29HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_1,
+        imageHD: December2024Sunderland_1HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_2,
+        imageHD: December2024Sunderland_2HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_3,
+        imageHD: December2024Sunderland_3HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_4,
+        imageHD: December2024Sunderland_4HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_5,
+        imageHD: December2024Sunderland_5HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_6,
+        imageHD: December2024Sunderland_6HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_7,
+        imageHD: December2024Sunderland_7HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_8,
+        imageHD: December2024Sunderland_8HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_9,
+        imageHD: December2024Sunderland_9HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_10,
+        imageHD: December2024Sunderland_10HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_11,
+        imageHD: December2024Sunderland_11HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_12,
+        imageHD: December2024Sunderland_12HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_13,
+        imageHD: December2024Sunderland_13HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_14,
+        imageHD: December2024Sunderland_14HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_15,
+        imageHD: December2024Sunderland_15HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_16,
+        imageHD: December2024Sunderland_16HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_17,
+        imageHD: December2024Sunderland_17HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_18,
+        imageHD: December2024Sunderland_18HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_19,
+        imageHD: December2024Sunderland_19HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_20,
+        imageHD: December2024Sunderland_20HD,
+    },
+    {
+        tag: 'December 2024 Sunderland',
+        link: 'NONE',
+        imageName: December2024Sunderland_21,
+        imageHD: December2024Sunderland_21HD,
+    },
     {
         tag: 'December 2024 Newcastle',
         link: 'NONE',
